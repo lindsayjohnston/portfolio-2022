@@ -15,6 +15,9 @@ React
 ## Inspo
 
 [https://grafik.co.nz/](https://grafik.co.nz/)
+[https://cricut.com/en-us/stories](https://cricut.com/en-us/stories)
+
+Font Pairings: [https://www.figma.com/file/OWzJRZoB7I2KXCppuzuq0v7E/Open-Sans-Pairings/duplicate?node-id=0%3A1](https://www.figma.com/file/OWzJRZoB7I2KXCppuzuq0v7E/Open-Sans-Pairings/duplicate?node-id=0%3A1) 
 
 ## Resources
 

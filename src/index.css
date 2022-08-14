@@ -5,6 +5,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.secondary-font {
+  font-family: source-sans-pro, sans-serif;
+}
+
 /* https://css-tricks.com/rem-global-em-local/ */
 
 html{
