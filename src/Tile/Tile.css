@@ -1,0 +1,29 @@
+
+
+@media only screen and (max-width: 768px){
+    .tile {
+        width: 100vw;
+        height: 66vw;
+        margin-bottom: 1px;
+        background-color: white;
+        min-width: 400px;
+        min-height: 264px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .tile > h2{
+        position: absolute;
+    }
+
+    .content{
+        background-color: lightsalmon;
+        width: 90%;
+        height: 90%;
+    }
+
+}
+
+

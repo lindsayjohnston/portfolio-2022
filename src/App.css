@@ -1,5 +1,15 @@
-.app-header{
-    background-color: pink;
-    height: 100px;
-    width: 300px
+@media only screen and (max-width: 768px){
+    header{
+        background-color: pink;
+        height: 80px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
 }
+
+
