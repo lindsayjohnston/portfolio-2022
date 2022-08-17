@@ -1,12 +1,51 @@
+.app{
+    min-width: 300px;
+    min-height: 500px;
+}
 @media only screen and (max-width: 768px){
-    header{
-        background-color: pink;
-        height: 80px;
+    .app{
+        position: relative;
     }
+    .top-title{
+        position: absolute;
+        top: 100px;
+        left: 30px;
+    }
+
+    .right-title{
+        transform: rotate(90deg);
+        position: absolute;
+        right: -30px;
+        top: 300px;
+    }
+    header{
+        /* background-color: pink; */
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        width: fit-content
+    }
+
+    nav li{
+        margin-left: 10px
+    }
+
     main{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin-top: 45px;
+        padding: 0px 50px 50px 50px;
+    }
+
+    .app .test-div{
+        height: 1000px;
+        width: calc(100% - 40px);
+        background-color: lightgrey;
+        padding: 20px;
     }
 
     
