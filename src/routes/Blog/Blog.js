@@ -1,8 +1,9 @@
+import './Blog.css';
 
 const Blog =() =>{
 
     return(
-        <div> This will be the blog</div>
+        <div className="blog-page page-content"> This will be the blog</div>
     )
 }
 

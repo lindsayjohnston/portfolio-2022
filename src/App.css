@@ -8,21 +8,23 @@
     }
     .top-title{
         position: absolute;
-        top: 100px;
+        top: 115px;
         left: 30px;
     }
 
     .right-title{
         transform: rotate(90deg);
         position: absolute;
-        right: -30px;
-        top: 300px;
+        right: -38px;
+        top: 340px;
     }
     header{
         /* background-color: pink; */
         height: 80px;
         justify-content: center;
         align-items: center;
+        margin-top: 15px;
+        width:100vw;
     }
 
     nav {
@@ -37,8 +39,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-top: 45px;
-        padding: 0px 50px 50px 50px;
+        margin-top: 15px;
     }
 
     .app .test-div{
