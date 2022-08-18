@@ -1,15 +1,33 @@
 import './App.css';
 import Tile from './Tile/Tile';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useLocation, Routes, Route, Link } from "react-router-dom";
 import Work from './routes/Work/Work.js';
 import About from './routes/About/About.js';
 import Contact from './routes/Contact/Contact.js';
 import Blog from './routes/Blog/Blog.js';
-
+import { useEffect, useState } from 'react';
 
 let testArray = Array(12).fill(0);
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(null);
+  const location = useLocation();
+  
+  useEffect(()=>{
+    let locationString = `${location.pathname.slice(1)}-link`;
+    const links = Array.prototype.slice.call(document.getElementsByClassName('nav-link'));
+    for(const i in links){
+      if(links[i].classList.contains(locationString)){
+        links[i].classList.add('underline');
+      } else {
+        if(links[i].classList.contains('underline')){
+          links[i].classList.remove('underline')
+        }
+      } 
+    }
+    console.log(links);
+  },[location])
+  
   return (
     <div className="app">
       <h1 className='top-title'>lindsay k.</h1>
@@ -17,16 +35,16 @@ function App() {
       <header className="app-header flex-row">
         <nav >
           <ul className='flex-row'>
-            <li>
+            <li className='work-link nav-link'>
               <Link to="/">Work</Link>
             </li>
-            <li>
+            <li className='about-link nav-link'>
               <Link to="/about">About</Link>
             </li>
-            <li>
+            <li className='blog-link nav-link'>
               <Link to="/blog">Blog</Link>
             </li>
-            <li>
+            <li className='contact-link nav-link'>
               <Link to="/contact">Contact</Link>
             </li>
             
