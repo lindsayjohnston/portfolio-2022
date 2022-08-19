@@ -7,7 +7,8 @@
   --second-light-color:  #dbd9d9;
   --main-dark-color: #000000;
   --hl-color-1: #9BCB76;
-  --hl-color-2: #DB7878
+  --hl-color-2: #DB7878;
+  --z-splash-screen: 1;
 }
 body {
   margin: 0;

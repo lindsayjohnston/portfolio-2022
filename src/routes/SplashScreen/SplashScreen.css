@@ -1,0 +1,9 @@
+.splash-screen{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightskyblue;
+    z-index: var(--z-splash-screen);
+    justify-content: center;
+    align-items: center;
+}

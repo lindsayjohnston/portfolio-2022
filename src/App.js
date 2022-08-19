@@ -1,6 +1,7 @@
 import './App.css';
 import Tile from './Tile/Tile';
 import { useLocation, Routes, Route, Link } from "react-router-dom";
+import SplashScreen from './routes/SplashScreen/SpashScreen';
 import Work from './routes/Work/Work.js';
 import About from './routes/About/About.js';
 import Contact from './routes/Contact/Contact.js';
@@ -30,6 +31,7 @@ function App() {
   
   return (
     <div className="app">
+      <SplashScreen/> 
       <h1 className='top-title'>lindsay k.</h1>
       <h1 className='right-title'>johnston</h1>
       <header className="app-header flex-row">
