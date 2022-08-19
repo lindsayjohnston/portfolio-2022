@@ -1,14 +1,14 @@
 import './App.css';
 import Tile from './Tile/Tile';
 import { useLocation, Routes, Route, Link } from "react-router-dom";
-import SplashScreen from './routes/SplashScreen/SpashScreen';
+import SplashScreen from './SplashScreen/SpashScreen';
 import Work from './routes/Work/Work.js';
 import About from './routes/About/About.js';
 import Contact from './routes/Contact/Contact.js';
 import Blog from './routes/Blog/Blog.js';
 import { useEffect, useState } from 'react';
 
-let testArray = Array(12).fill(0);
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState(null);
