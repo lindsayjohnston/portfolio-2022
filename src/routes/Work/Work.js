@@ -3,13 +3,29 @@ import Tile from '../../Tile/Tile.js';
 
 let testArray = Array(12).fill(0);
 
-const Work = (props) =>{
-    return(
+const workImgs = {
+    image: {
+        title: "blah"
+    }
+}
+
+const Work = (props) => {
+    return (
         <div className="work-page page-content">
-            {testArray.map(element => <Tile key={element}/>)}
+            {Object.keys(workImgs).map(key => {
+         
+                return (
+                    <Tile key={key}>
+                        {workImgs[key].title}
+                    </Tile>
+
+                )
+            }
+
+            )}
         </div>
     )
-    
+
 }
 
 export default Work;

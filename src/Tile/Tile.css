@@ -2,16 +2,14 @@
 
 @media only screen and (max-width: 768px){
     .tile {
-        width: 100vw;
         height: 66vw;
         margin-bottom: 2px;
         background-color: white;
-        min-width: 400px;
-        min-height: 264px;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
+        border-bottom: 1px solid var(--second-light-color);
     }
 
     .tile > h2{
