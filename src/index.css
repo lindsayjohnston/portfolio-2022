@@ -69,4 +69,41 @@ a:hover{
   padding: 85px 45px;
 }
 
+.fade-in{
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 2s;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out{
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 
