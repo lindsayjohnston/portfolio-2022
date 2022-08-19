@@ -38,9 +38,9 @@ const Work = (props) => {
                     <Tile key={key}>
                     {/* picture is a much newer addition to the language. Its main goal is to let us load different sources depending on resolution or support for a given image format. */}
                         <picture>
-                            <source srcSet='../sad-mode-album-cover_768x506.webp' type="image/webp"/>
-                            <source srcSet='../sad-mode-album-cover_768x506.webp' type="image/jpg"/>
-                            <img src= '../sad-mode-album-cover-768x506.jpg'></img>
+                            <source srcSet='../media/work/sad-mode-album-cover-768x506.webp' type="image/webp"/>
+                            <source srcSet='../media/work/sad-mode-album-cover-768x506.jpg' type="image/jpg"/>
+                            <img src= '../media/work/sad-mode-album-cover-768x506.jpg'></img>
                         </picture>
                     </Tile>
                 )
