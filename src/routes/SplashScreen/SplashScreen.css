@@ -1,9 +1,22 @@
+@keyframes example {
+    from{top: 100vh}
+    to {top: 0vh}
+}
 .splash-screen{
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: lightskyblue;
+    background-color:white;
     z-index: var(--z-splash-screen);
+}
+
+.splash-screen-content{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
     justify-content: center;
     align-items: center;
+    animation-name: example;
+    animation-duration: 2s;
 }
