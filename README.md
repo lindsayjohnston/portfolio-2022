@@ -26,8 +26,13 @@ Font Pairings: [https://www.figma.com/file/OWzJRZoB7I2KXCppuzuq0v7E/Open-Sans-Pa
 
 ## Resources
 
+https://www.freepik.com/free-vector/digital-device-mockup-set_4122518.htm
+<a href="https://www.freepik.com/free-vector/digital-device-mockup-set_4122518.htm">Image by rawpixel.com</a> on Freepik
+
 
 ## What I Learned 
 
 useLocation() hook for react-router-dom allowed me to conditionally render certain UI elements according to the current path.
+
+Picture elements weren't displaying correctly when deployed to AWS Amplify. Found the fix [here] (https://stackoverflow.com/questions/64146914/react-images-load-locally-but-not-on-aws-amplify).
 

@@ -12,6 +12,8 @@
 
     .tile > h2{
         position: absolute;
+        bottom: .5rem;
+        right: 1rem
     }
 
     .content{
