@@ -1,5 +1,9 @@
 # Lindsay's Portfolio 2022
 
+## Live Site:
+
+[https://master.d1gvj2a7ryhuv2.amplifyapp.com/](https://master.d1gvj2a7ryhuv2.amplifyapp.com/)
+
 ## Technologies Used
 
 React

@@ -47,6 +47,10 @@ const Work = (props) => {
             }
 
             )}
+
+            <Tile>
+                <img src= '../media/work/sad-mode-album-cover-768x506.jpg'></img>
+            </Tile>
         </div>
     )
 
