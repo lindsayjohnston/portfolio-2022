@@ -36,9 +36,10 @@ code {
     monospace;
 }
 
-h1, h2, h3, h4, h5, h6, ul{
+h2, h3, h4, h5, h6, ul{
   margin: 0;
 }
+
 
 ul{
   list-style-type: none;
@@ -66,10 +67,6 @@ a:hover{
 
 .underline{
   text-decoration: underline;
-}
-
-.page-content{
-  padding: 85px 0px;
 }
 
 .fade-in{

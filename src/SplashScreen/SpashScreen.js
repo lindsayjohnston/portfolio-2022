@@ -21,8 +21,7 @@ const SplashScreen = (props) => {
             <div id="splash-screen" className='splash-screen' onClick={closeScreen}>
                 <div className='splash-screen-content flex-column'>
                     <div id='splash-title-div'className='splash-title flex-column fade-in'>
-                        <h1>lindsay k.</h1>
-                        <h1>johnston</h1>
+                        <h1>lindsay k. johnston</h1>
                     </div>
                 </div>
             </div>

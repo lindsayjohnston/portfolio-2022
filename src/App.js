@@ -32,8 +32,6 @@ function App() {
   return (
     <div className="app">
       <SplashScreen/> 
-      <h1 className='top-title'>lindsay k.</h1>
-      <h1 className='right-title'>johnston</h1>
       <header className="app-header flex-row">
         <nav >
           <ul className='flex-row'>
@@ -49,8 +47,8 @@ function App() {
             <li className='contact-link nav-link'>
               <Link to="/contact">Contact</Link>
             </li>
-            
           </ul>
+          <h1 className='top-title'>lindsay k. johnston</h1>
         </nav>
       </header>
       <main>
