@@ -5,19 +5,23 @@ let testArray = Array(12).fill(0);
 
 const workTiles = {
     //TO-DO: generate jpg and webp for each image
-    creative: {
-        title: "Creative",
-        type: "img/jpg",
-        src: '../media/work/sad-mode-album-cover-768x506.jpg'
+    music:{
+        title: "Music",
+        type : "video/mp4",
+        src: "../media/work/bear-named-sue-clip.mp4"
     },
     web:{
         title: "Web Development",
         type: "img/png",
         src: "../media/work/micah-device-mockup.png"
     },
-    // music:{
-    //     title: "Music"
-    // },
+    creative: {
+        title: "Creative",
+        type: "img/jpg",
+        src: '../media/work/sad-mode-album-cover-768x506.jpg'
+    },
+
+
     // corporate:{
     //     title: "Corporate"
     // },
@@ -35,11 +39,19 @@ const Work = (props) => {
                 return (
                     <Tile key={key} title = {workTiles[key].title}>
                     {/* picture is a much newer addition to the language. Its main goal is to let us load different sources depending on resolution or support for a given image format. */}
-                        <picture>
+                        {workTiles[key].type.includes("img")
+                            ?
+                            <picture>
                             {/* <source srcSet='../media/work/sad-mode-album-cover-768x506.webp' type="image/webp"/> */}
                             <source srcSet={workTiles[key].src} type={workTiles[key].type}/>
                             <img src= {workTiles[key].src}></img>
                         </picture>
+                            :
+                            <video muted autoplay={"autoplay"} loop={true} >
+                                <source src = {workTiles[key].src} type={workTiles[key].type}></source>
+                            </video>
+                        }
+
                     </Tile>
                 )
             }
