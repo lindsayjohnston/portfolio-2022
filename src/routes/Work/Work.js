@@ -18,17 +18,14 @@ const workTiles = {
     creative: {
         title: "Creative",
         type: "img/jpg",
-        src: '../media/work/sad-mode-album-cover-768x506.jpg'
+        src: '../media/work/sugar-mama-logo-768x506.jpg'
     },
+    apparel:{
+        title: "Apparel",
+        type: "img/jpg",
+        src: '../media/work/micah-merch-768-506.jpg'
 
-
-    // corporate:{
-    //     title: "Corporate"
-    // },
-    // apparel:{
-    //     title: "Apparel"
-    // },
-    
+    }
 }
 
 const Work = (props) => {
@@ -47,7 +44,7 @@ const Work = (props) => {
                             <img src= {workTiles[key].src}></img>
                         </picture>
                             :
-                            <video muted autoplay={"autoplay"} loop={true} >
+                            <video controls muted autoplay={"autoplay"} loop={true} >
                                 <source src = {workTiles[key].src} type={workTiles[key].type}></source>
                             </video>
                         }
