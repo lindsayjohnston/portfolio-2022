@@ -6,7 +6,7 @@
   --main-light-color: #ffffff;
   --second-light-color:  #dbd9d9;
   --main-dark-color: #000000;
-  --hl-color-1: #edd814;
+  --hl-color-1: #fdd74c;
   --hl-color-2: #35bbef;
   --z-splash-screen: 3;
   --z-header: 2;
@@ -53,6 +53,10 @@ a{
 
 a:hover{
   color: var(--hl-color-2);
+}
+
+.page-content{
+  padding: 1rem;
 }
 
 .flex-column{

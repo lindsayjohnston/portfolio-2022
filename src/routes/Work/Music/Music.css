@@ -1,0 +1,17 @@
+.music-page section{
+    padding:1rem;
+}
+
+.music-page .section-odd{
+    background-color: var(--hl-color-1);
+    border-radius: 1rem;
+}
+
+.music-page .content-area iframe{
+    /* width: calc(100vw - 2rem);
+    height: calc((2/3) * (100vw - 2rem) ); */
+}
+
+.music-page .content-area img{
+    width: 100%;
+}

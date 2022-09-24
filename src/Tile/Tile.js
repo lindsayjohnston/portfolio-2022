@@ -10,9 +10,11 @@ const Tile = (props) => {
             <Link to={props.link}>
                 <div className="content">
                     {props.children}
+                    <h2>{props.title}</h2>
                 </div>
-                <h2>{props.title}</h2>
+                
             </Link>
+
         </div>
 
     )
