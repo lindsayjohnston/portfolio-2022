@@ -1,15 +1,20 @@
 import './Tile.css';
+import { Link } from "react-router-dom";
 
-const Tile = (props) =>{
+const Tile = (props) => {
     // PROPS:
     //title - string 
-    return(
+    //link - string - "/work/music"
+    return (
         <div className="tile">
-            <div className="content">
-                {props.children}
-            </div>
-            <h2>{props.title}</h2>
+            <Link to={props.link}>
+                <div className="content">
+                    {props.children}
+                </div>
+                <h2>{props.title}</h2>
+            </Link>
         </div>
+
     )
 }
 

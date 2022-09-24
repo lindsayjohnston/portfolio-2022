@@ -1,5 +1,4 @@
 import './App.css';
-import Tile from './Tile/Tile';
 import { useLocation, Routes, Route, Link } from "react-router-dom";
 import SplashScreen from './SplashScreen/SpashScreen';
 import Work from './routes/Work/Work.js';
@@ -7,6 +6,7 @@ import About from './routes/About/About.js';
 import Contact from './routes/Contact/Contact.js';
 import Blog from './routes/Blog/Blog.js';
 import { useEffect, useState } from 'react';
+import Music from './routes/Work/Music/Music';
 
 
 
@@ -35,9 +35,6 @@ function App() {
       <header className="app-header flex-row">
         <nav >
           <ul className='flex-row'>
-            <li className='work-link nav-link'>
-              <Link to="/">Work</Link>
-            </li>
             <li className='about-link nav-link'>
               <Link to="/about">About</Link>
             </li>
@@ -48,12 +45,13 @@ function App() {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
-          <h1 className='top-title'>lindsay k. johnston</h1>
+          <Link to="/"><h1 className='top-title'>lindsay k. johnston</h1></Link>
         </nav>
       </header>
       <main>
         <Routes>
           <Route path='/' element={<Work />}  />
+          <Route path='/work/music' element={<Music />}  />
           <Route path='/about' element={<About/>} />
           <Route path='/blog' element={<Blog/>} />
           <Route path='/contact' element={<Contact/>} />
