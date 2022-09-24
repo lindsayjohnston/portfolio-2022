@@ -2,7 +2,13 @@ import React from "react";
 import './Music.css';
 
 const Music = () => {
-    //TODO: spell check all of this
+    //TODO: 
+        //  spell check all of this
+        //  In the media link to /work/music/media  
+            // - commercial
+            // - articles
+            // - Eva's show
+            // - podcasts?
     return (
         <div className="music-page page-content">
             <div className="content-area">
@@ -25,17 +31,20 @@ const Music = () => {
                     <h3>Chaperone</h3>
                     <p>The Grease-esque single Chaperone was Vanna Oh!'s first release on the Corporat Records label. It's everything you want from a rock-and-roll tune: the drums pop, the vocals soar and the guitar riffs make you want to do the twist.</p>
                     <a  target="_blank"
-                        href="https://vannaoh.bandcamp.com/album/samples-2">
+                        href="https://vannaoh.bandcamp.com/track/chaperone">
                         <img src="../media/work/chaperone-album-art.jpg"></img>
                     </a>
                     <a href="https://open.spotify.com/album/5osR7zeT0g7Nqc8SK0R8i2?si=OCQmAb34RAWviB0Qo4O3XA">Listen on Spotify</a>
                 </section>
-                <section>
-                    In the media link to /work/music/media  
-                        - commercial
-                        - articles
-                        - Eva's show
-                        - podcasts?
+                <section className="section-even flex-column">
+                    <iframe src="https://www.youtube.com/embed/t65M9xsrAdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Sad Mode</h3>
+                    <p>Sad Mode takes a sharp turn away from Vanna Oh!'s previous work. COVID wreaked havoc on the indie music industry and the disappoinment is palpable in this DIY collection. The Inlander puts it succintly: "The four-song collection finds her voice settling into a smokier place...Her feelings of loneliness and empathetic heartbreak shine through on tunes like 'Missing You' and 'Better For Worse'."</p>
+                    <a target="_blank"
+                        href="https://vannaoh.bandcamp.com/album/sad-mode">
+                        <img src="../media/work/sad-mode-album-art.jpg"></img>
+                    </a>
+                    <a href="https://open.spotify.com/album/4TpBORzcX6IAgEnn1yJzUJ">Listen on Spotify</a>
                 </section>
             </div>
         </div>
