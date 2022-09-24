@@ -1,6 +1,11 @@
 .music-page section{
     padding:1rem;
     align-items: center;
+    margin-bottom: 1rem;
+}
+
+.music-page p{
+    text-align: center;
 }
 
 .music-page section a{
@@ -10,6 +15,11 @@
 
 .music-page .section-odd{
     background-color: var(--hl-color-1);
+    border-radius: 1rem;
+}
+
+.music-page .section-even{
+    border: 1px solid var(--hl-color-2);
     border-radius: 1rem;
 }
 
