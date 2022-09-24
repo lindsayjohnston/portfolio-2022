@@ -6,7 +6,7 @@ const Music = () => {
     return (
         <div className="music-page page-content">
             <div className="content-area">
-                <section className="section-odd">
+                <section className="section-odd flex-column">
                     <h2>Music</h2>
                     <h3>Samples</h3>
                     <p>This will be explanation</p>
@@ -15,7 +15,6 @@ const Music = () => {
                         href="https://vannaoh.bandcamp.com/album/samples-2">
                         <img src="../media/work/samples-album-art.jpg"></img>
                     </a>
-
                     <a href="https://open.spotify.com/album/2R7DUK2sMjv9686ranhsmM">Listen on Spotify</a>
                 </section>
 

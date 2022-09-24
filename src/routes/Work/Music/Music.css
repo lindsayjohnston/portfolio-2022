@@ -1,5 +1,11 @@
 .music-page section{
     padding:1rem;
+    align-items: center;
+}
+
+.music-page section a{
+    display:flex;
+    justify-content: center;
 }
 
 .music-page .section-odd{
@@ -8,10 +14,10 @@
 }
 
 .music-page .content-area iframe{
-    /* width: calc(100vw - 2rem);
-    height: calc((2/3) * (100vw - 2rem) ); */
+    width: calc(100vw - 5rem);
+    height: calc((2/3) * (100vw - 5rem) );
 }
 
 .music-page .content-area img{
-    width: 100%;
+    width: 50%;
 }
