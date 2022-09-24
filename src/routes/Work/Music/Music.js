@@ -7,7 +7,7 @@ const Music = () => {
         //  In the media link to /work/music/media  
             // - commercial
             // - articles
-            // - Eva's show
+            // - Eva's show`
             // - podcasts?
     return (
         <div className="music-page page-content">
@@ -39,7 +39,7 @@ const Music = () => {
                 <section className="section-even flex-column">
                     <iframe src="https://www.youtube.com/embed/t65M9xsrAdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h3>Sad Mode</h3>
-                    <p>Sad Mode takes a sharp turn away from Vanna Oh!'s previous work. COVID wreaked havoc on the indie music industry and the disappoinment is palpable in this DIY collection. The Inlander puts it succintly: "The four-song collection finds her voice settling into a smokier place...Her feelings of loneliness and empathetic heartbreak shine through on tunes like 'Missing You' and 'Better For Worse'."</p>
+                    <p>Sad Mode takes a sharp turn away from Vanna Oh!'s previous work. COVID wreaked havoc on the indie music industry and the disappoinment is palpable in this DIY collection. <a href="https://www.inlander.com/spokane/buzz-bin/Content?oid=23208928">The Inlander</a> puts it succintly: "The four-song collection finds her voice settling into a smokier place...Her feelings of loneliness and empathetic heartbreak shine through on tunes like 'Missing You' and 'Better For Worse'."</p>
                     <a target="_blank"
                         href="https://vannaoh.bandcamp.com/album/sad-mode">
                         <img src="../media/work/sad-mode-album-art.jpg"></img>

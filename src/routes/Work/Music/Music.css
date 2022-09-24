@@ -13,6 +13,12 @@
     justify-content: center;
 }
 
+.music-page p a{
+    margin: 0px;
+    display: unset;
+    color: var(--hl-color-2)
+}
+
 .music-page .section-odd{
     background-color: var(--hl-color-1);
     border-radius: 1rem;

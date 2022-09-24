@@ -7,6 +7,8 @@ import Contact from './routes/Contact/Contact.js';
 import Blog from './routes/Blog/Blog.js';
 import { useEffect, useState } from 'react';
 import Music from './routes/Work/Music/Music';
+import WebDev from './routes/Work/WebDev/WebDev';
+import Creative from './routes/Work/Creative/Creative';
 
 
 
@@ -52,6 +54,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Work />}  />
           <Route path='/work/music' element={<Music />}  />
+          <Route path='/work/web-dev' element={<WebDev />}  />
+          <Route path='/work/creative' element={<Creative/>}  />
           <Route path='/about' element={<About/>} />
           <Route path='/blog' element={<Blog/>} />
           <Route path='/contact' element={<Contact/>} />

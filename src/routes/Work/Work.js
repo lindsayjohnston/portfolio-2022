@@ -25,14 +25,14 @@ const workTiles = {
         alt: "Sugar Mama logo",
         link: '/work/creative'
     },
-    apparel:{
-        title: "Apparel",
-        type: "img/jpg",
-        src: '../media/work/micah-merch-768-506.jpg',
-        alt: "Man in Vanna Oh! sweatshirt",
-        link: '/work/apparel'
+    // apparel:{
+    //     title: "Apparel",
+    //     type: "img/jpg",
+    //     src: '../media/work/micah-merch-768-506.jpg',
+    //     alt: "Man in Vanna Oh! sweatshirt",
+    //     link: '/work/apparel'
 
-    }
+    // }
 }
 
 const Work = (props) => {

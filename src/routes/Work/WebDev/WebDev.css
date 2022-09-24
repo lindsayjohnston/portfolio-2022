@@ -1,0 +1,29 @@
+.web-dev-page section{
+    padding:1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.web-dev-page p{
+    text-align: center;
+}
+
+.web-dev-page section a{
+    display:flex;
+    justify-content: center;
+}
+
+.web-dev-page .section-odd{
+    background-color: var(--hl-color-1);
+    border-radius: 1rem;
+}
+
+.web-dev-page .section-even{
+    border: 1px solid var(--hl-color-2);
+    border-radius: 1rem;
+}
+
+
+.web-dev-page .content-area img{
+    width: 100%;
+}
