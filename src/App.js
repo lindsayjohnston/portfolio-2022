@@ -10,6 +10,7 @@ import Music from './routes/Work/Music/Music';
 import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
 import { blogs } from './blogObject';
+import BlogPost from './routes/Blog/BlogPost/BlogPost';
 
 
 
@@ -62,7 +63,7 @@ function App() {
 
           {Object.keys(blogs).map((UUID) => {
               return (
-                <Route path={`blog/${UUID}`} element={<div>TEST</div>} />
+                <Route path={`blog/${UUID}`} element={<BlogPost />} />
               )
             })
             }
