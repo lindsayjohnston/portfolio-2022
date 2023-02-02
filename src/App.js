@@ -9,31 +9,32 @@ import { useEffect, useState } from 'react';
 import Music from './routes/Work/Music/Music';
 import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
+import { blogs } from './blogObject';
 
 
 
 function App() {
   const [currentPage, setCurrentPage] = useState(null);
   const location = useLocation();
-  
-  useEffect(()=>{
+
+  useEffect(() => {
     let locationString = `${location.pathname.slice(1)}-link`;
     const links = Array.prototype.slice.call(document.getElementsByClassName('nav-link'));
-    for(const i in links){
-      if(links[i].classList.contains(locationString)){
+    for (const i in links) {
+      if (links[i].classList.contains(locationString)) {
         links[i].classList.add('underline');
       } else {
-        if(links[i].classList.contains('underline')){
+        if (links[i].classList.contains('underline')) {
           links[i].classList.remove('underline')
         }
-      } 
+      }
     }
     console.log(links);
-  },[location])
-  
+  }, [location])
+
   return (
     <div className="app">
-      <SplashScreen/> 
+      <SplashScreen />
       <header className="app-header flex-row">
         <nav >
           <ul className='flex-row'>
@@ -52,13 +53,20 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<Work />}  />
-          <Route path='/work/music' element={<Music />}  />
-          <Route path='/work/web-dev' element={<WebDev />}  />
-          <Route path='/work/creative' element={<Creative/>}  />
-          <Route path='/about' element={<About/>} />
-          <Route path='/blog' element={<Blog/>} />
-          <Route path='/contact' element={<Contact/>} />
+          <Route path='/' element={<Work />} />
+          <Route path='/work/music' element={<Music />} />
+          <Route path='/work/web-dev' element={<WebDev />} />
+          <Route path='/work/creative' element={<Creative />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/blog' element={<Blog />} />
+
+          {Object.keys(blogs).map((UUID) => {
+              return (
+                <Route path={`blog/${UUID}`} element={<div>TEST</div>} />
+              )
+            })
+            }
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </main>
     </div>
