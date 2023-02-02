@@ -4,6 +4,15 @@
     align-items: center;
 }
 
+.blog-page a{
+    margin: 0;
+    width: 100%;
+}
+
+.blog-page a:hover{
+    color: unset;
+}
+
 .blog-page section {
     padding: 1rem;
     align-items: center;

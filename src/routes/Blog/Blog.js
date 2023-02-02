@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, Routes, Route } from 'react-router-dom';
 import './Blog.css';
 
 const Blog = () => {
@@ -39,17 +39,29 @@ const Blog = () => {
                 }
 
                 return (
-                    <section class={sectionClass}>
+         
                         <Link to={`/blog/${UUID}`}>
-                            <div class="text-area">
-                                <h3>{blogs[UUID].title}</h3>
-                                <p>{blogs[UUID].snippet}</p>
-                            </div>
-                            <img src={blogs[UUID].img} />
+                            <section class={sectionClass}>
+
+                                <div class="text-area">
+                                    <h3>{blogs[UUID].title}</h3>
+                                    <p>{blogs[UUID].snippet}</p>
+                                </div>
+                                <img src={blogs[UUID].img} />
+                            </section>
                         </Link>
-                    </section>
+
+              
                 )
             })}
+            {/* <Routes>
+                {Object.keys(blogs).map((UUID)=>{
+                    return(
+                        <Route path={`${UUID}`} element={<div>{UUID}</div>}  />
+                    )
+                })
+                }
+            </Routes> */}
         </div>
     )
 }
