@@ -1,47 +1,45 @@
+.tile-title {
+    width: 100%;
+    text-align: right;
+    padding-right: 1rem;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255, 1));
+    bottom: 0px;
+    margin: 0;
+}
+
+.tile-title:hover {
+    transform: scale(1.02);
+}
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     .tile {
         height: calc((2/3) * (100vw - 2rem));
         width: calc(100vw - 2rem);
-        background-color:var(--second-light-color);
-  
+        background-color: var(--second-light-color);
         border-bottom: 1px solid var(--second-light-color);
         overflow: hidden;
     }
 
-    .tile .content h2{
-        position: absolute;
-        bottom: .5rem;
-        right: 1rem;
-        transition: all .2s ease-in-out;
-    }
-
-    .tile .content h2:hover{
-        transform: scale(1.08);
-    }
-
-
-    .tile a:hover{
+    .tile a:hover {
         color: unset;
     }
 
-    .content{
+    .content {
         position: relative;
         width: 100%;
-        height:100%;
+        height: 100%;
     }
 
-    .content > picture,
-    .content > picture > img
-    {
-        height:100%;
+    .content>picture,
+    .content>picture>img {
+        height: 100%;
     }
 
-    .content >  video {
+    .content>video {
         height: 100%;
     }
 
 }
-
-

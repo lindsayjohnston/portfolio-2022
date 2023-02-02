@@ -5,18 +5,19 @@ let testArray = Array(12).fill(0);
 
 const workTiles = {
     //TO-DO: generate jpg and webp for each image
-    music:{
-        title: "Music",
-        type : "video/mp4",
-        src: "../media/work/bear-named-sue-clip.mp4",
-        link: '/work/music'
-    },
+
     web:{
         title: "Web Development",
         type: "img/png",
         src: "../media/work/micah-device-mockup.png",
         alt: "Micah Clay website mockup",
         link: '/work/web-dev'
+    },
+    music:{
+        title: "Music",
+        type : "video/mp4",
+        src: "../media/work/bear-named-sue-clip.mp4",
+        link: '/work/music'
     },
     creative: {
         title: "Creative",
