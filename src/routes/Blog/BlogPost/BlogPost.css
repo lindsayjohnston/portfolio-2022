@@ -1,3 +1,24 @@
 .blog-post-page{
-   background-color: pink;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding:1rem;
+}
+
+.blog-post-page h2,
+.blog-post-page h3 {
+    text-align: center;
+}
+
+.blog-post-page .blog-post-content{
+   border: 1px solid var(--hl-color-2);
+   border-radius: 1rem;
+   width:100%;
+   padding: 1rem;
+}
+
+.blog-post-page .blog-image{
+   max-width:100%;
+   max-height: 400px;
+   margin-bottom: 1rem;
 }

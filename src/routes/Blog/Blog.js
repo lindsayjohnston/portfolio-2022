@@ -1,6 +1,6 @@
 import { Link, Routes, Route } from 'react-router-dom';
 import './Blog.css';
-import { blogs } from '../../blogObject'
+import { blogs } from './blogObject'
 
 const Blog = () => {
     // const blogs = {

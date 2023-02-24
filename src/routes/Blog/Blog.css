@@ -4,6 +4,8 @@
     align-items: center;
 }
 
+
+
 .blog-page a {
     margin: 0;
     width: 100%;
@@ -23,6 +25,12 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .blog-page p,
+    .blog-page h2,
+    .blog-page h3 {
+        text-align: center;
+    }
+
     .blog-page section {
         flex-direction: column;
     }

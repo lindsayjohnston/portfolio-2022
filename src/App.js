@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 import Music from './routes/Work/Music/Music';
 import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
-import { blogs } from './blogObject';
+import { blogs } from './routes/Blog/blogObject';
 import BlogPost from './routes/Blog/BlogPost/BlogPost';
 
 
@@ -63,7 +63,7 @@ function App() {
 
           {Object.keys(blogs).map((UUID) => {
               return (
-                <Route path={`blog/${UUID}`} element={<BlogPost />} />
+                <Route path={`blog/${UUID}`} element={<BlogPost/>} />
               )
             })
             }

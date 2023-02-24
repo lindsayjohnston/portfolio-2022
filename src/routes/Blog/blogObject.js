@@ -1,10 +1,14 @@
+import React from "react"
+import CreateAWebpageBlogPost from "./BlogContent/CreateAWebpage"
+
 export const blogs = {
    UUID1: {
       date: "1-1-2023",
-      title: "Title 1",
-      snippet: "Blah blah 1",
-      img: "../media/work/south-texas-covid.png",
-      highlight: true
+      title: "Create Your First Webpage",
+      snippet: "Go from 0 to Web Developer in 9 minutes or your money back!",
+      img: "../media/blog/CreateAWebpage/create-a-webpage.png",
+      highlight: true,
+      content: <CreateAWebpageBlogPost />
    },
    UUID2: {
       date: "2-2-2023",
