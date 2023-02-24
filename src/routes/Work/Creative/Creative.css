@@ -4,7 +4,9 @@
     margin-bottom: 1rem;
 }
 
-.creative-page p{
+.creative-page p,
+.creative-page h3,
+.creative-page h2{
     text-align: center;
 }
 

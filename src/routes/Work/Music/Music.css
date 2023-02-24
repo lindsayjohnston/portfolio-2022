@@ -1,39 +1,45 @@
-.music-page section{
-    padding:1rem;
+.music-page section {
+    padding: 1rem;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.music-page p{
+.music-page p,
+.music-page h3,
+.music-page h2 {
     text-align: center;
 }
 
-.music-page section a{
-    display:flex;
+.music-page section a {
+    display: flex;
     justify-content: center;
 }
 
-.music-page p a{
+.music-page p a {
     margin: 0px;
     display: unset;
     color: var(--hl-color-2)
 }
 
-.music-page .section-odd{
+.music-page .section-odd {
     background-color: var(--hl-color-1);
     border-radius: 1rem;
 }
 
-.music-page .section-even{
+.music-page .section-even {
     border: 1px solid var(--hl-color-2);
     border-radius: 1rem;
 }
 
-.music-page .content-area iframe{
+.music-page .content-area iframe {
     width: calc(100vw - 5rem);
-    height: calc((2/3) * (100vw - 5rem) );
+    height: calc((2/3) * (100vw - 5rem));
+    min-width: 240px;
+    min-height: calc((2/3) * 240px);
+    max-width: 700px;
+    max-height: calc((2/3)*700px);
 }
 
-.music-page .content-area img{
+.music-page .content-area img {
     width: 50%;
 }

@@ -3,3 +3,12 @@
    flex-direction: column;
    align-items: center
 }
+
+.contact-page .section-even{
+   border: 1px solid var(--hl-color-2);
+   border-radius: 1rem;
+   width:100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}

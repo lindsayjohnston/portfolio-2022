@@ -4,7 +4,9 @@
     margin-bottom: 1rem;
 }
 
-.web-dev-page p{
+.web-dev-page p,
+.web-dev-page h3,
+.web-dev-page h2{
     text-align: center;
 }
 

@@ -1,12 +1,14 @@
 import './Contact.css';
 
-const Contact = () =>{
+const Contact = () => {
 
-    return(
+    return (
         <div className='contact-page page-content'>
             <h2>Contact</h2>
-            <a href = "mailto: lindsaykjohnston@outlook.com">Email</a>
-            <a href="https://www.linkedin.com/in/lindsay-k-johnston/" target="_blank">LinkedIn</a>
+            <div className='section-even'>
+                <a href="mailto: lindsaykjohnston@outlook.com">Email</a>
+                <a href="https://www.linkedin.com/in/lindsay-k-johnston/" target="_blank">LinkedIn</a>
+            </div>
         </div>
     )
 }

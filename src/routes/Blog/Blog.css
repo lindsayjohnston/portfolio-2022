@@ -4,12 +4,12 @@
     align-items: center;
 }
 
-.blog-page a{
+.blog-page a {
     margin: 0;
     width: 100%;
 }
 
-.blog-page a:hover{
+.blog-page a:hover {
     color: unset;
 }
 
@@ -20,6 +20,12 @@
     width: 100%;
     display: flex;
     transition: all .2s ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+    .blog-page section {
+        flex-direction: column;
+    }
 }
 
 .blog-page section:hover {
@@ -38,6 +44,8 @@
 
 .blog-page .highlighted-blog img {
     width: 33vw;
+    min-width: 50%;
+    max-width: 50%;
 }
 
 .blog-page .section-odd {

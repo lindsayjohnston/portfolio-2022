@@ -8,6 +8,7 @@
     width: 100vw;
     background-color:var(--second-light-color);
     z-index: var(--z-splash-screen);
+    min-width: 300px;
 }
 
 .splash-screen-content{

@@ -4,8 +4,26 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .about-page img {
-        width: 50%;
-    }
+.about-page img {
+    width:100%;
+    border-radius: 1rem;
+}
+
+.about-page .section-even {
+    border: 1px solid var(--hl-color-2);
+    border-radius: 1rem;
+    width: 50%;
+    min-width: 240px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-page .section-odd {
+    background-color: var(--hl-color-1);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.about-page .section-odd p{
+    text-align: center;
 }
