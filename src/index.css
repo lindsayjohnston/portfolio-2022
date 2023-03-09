@@ -59,6 +59,17 @@ a:hover{
   color: var(--hl-color-2);
 }
 
+.secondary-link-style {
+  background-color: var(--hl-color-3);
+  color: var(--main-light-color);
+  padding: .5rem;
+  border-radius: 1rem;
+}
+
+.secondary-link-style:hover{
+  color: var(--main-light-color);
+}
+
 .page-content{
   padding: 1rem;
   width:100%;
@@ -76,6 +87,10 @@ a:hover{
 
 .underline{
   text-decoration: underline;
+}
+
+.underline:hover{
+  text-decoration-color: var(--hl-color-2);
 }
 
 .fade-in{

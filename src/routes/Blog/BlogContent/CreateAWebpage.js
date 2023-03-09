@@ -14,7 +14,7 @@ export default function CreateAWebpageBlogPost() {
                      A computer
                   </li>
                   <li>
-                     Internet browser (Chrome, Safari, Firefox etc)
+                     Internet browser (Chrome, Safari, Firefox etc.)
                   </li>
                   <li>
                      Some sort of text editor (Notepad comes standard on Windows and TextEdit on Mac)
@@ -72,7 +72,7 @@ export default function CreateAWebpageBlogPost() {
                      </p>
                   </div>
                   <p>
-                     Feel free to edit the text in the &lt;body&gt; and &lt;title&gt; tags to whatever your heart desires. “Hello world” is a classic.
+                     Feel free to edit the text in the <strong>&lt;body&gt;</strong> and <strong>&lt;title&gt;</strong> tags to whatever your heart desires. “Hello world” is a classic.
                   </p>
                   <p>
                      Save this as an “.html” file.
@@ -102,11 +102,9 @@ export default function CreateAWebpageBlogPost() {
                   <div className="img-container">
                      <img src="../media/blog/CreateAWebpage/webpage-image.png" />
                   </div>
-
-
                   <p>
-                     Notice how the text in the &lt;title&gt; tag corresponds with the text that shows up in the browser tab and how the text in the
-                     &lt;body&gt; tag shows up on the page. Play around with these. Have a little fun!
+                     Notice how the text in the <strong>&lt;title&gt;</strong> tag corresponds with the text that shows up in the browser tab and how the text in the
+                     <strong>&lt;body&gt;</strong> tag shows up on the page. Play around with these. Have a little fun!
                   </p>
                </div>
             </div>

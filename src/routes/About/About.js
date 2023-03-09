@@ -9,6 +9,7 @@ const About = () => {
             <div className='section-even'>
                 <img src="../media/about/lindsay-glasses.png" />
             </div>
+
             <div className='section-odd'>
                 <p>My work experiences have varied greatly: from the non-profit sector to the service industry,
                     from education to creative director for a rock-and-roll band.
@@ -18,8 +19,13 @@ const About = () => {
                     I strive to communicate directly and honestly, work efficiently,
                     and push for female representation in historically male-dominated fields. </p>
             </div>
-            <a href="https://lkj-website-media-jan2022.s3.us-east-2.amazonaws.com/Lindsay_Johnston_WD_Resume_Aug2022.pdf" target="_blank">Resume</a>
-            <Link to="/">My Work</Link>
+            <div className='links'>
+                <a className='secondary-link-style'
+                    href="https://lkj-website-media-jan2022.s3.us-east-2.amazonaws.com/Lindsay_Johnston_WD_Resume_Aug2022.pdf"
+                    target="_blank">Resume</a>
+                <Link className='secondary-link-style' to="/">My Work</Link>
+            </div>
+
         </div>
     )
 }

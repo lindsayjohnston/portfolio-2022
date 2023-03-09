@@ -39,6 +39,9 @@ function App() {
       <header className="app-header flex-row">
         <nav >
           <ul className='flex-row'>
+            <li className='home-link nav-link'>
+              <Link to="/">Home</Link>
+            </li>
             <li className='about-link nav-link'>
               <Link to="/about">About</Link>
             </li>
@@ -49,7 +52,7 @@ function App() {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
-          <Link to="/"><h1 className='top-title'>lindsay k. johnston</h1></Link>
+          <h1 className='top-title'>lindsay k. johnston</h1>
         </nav>
       </header>
       <main>
@@ -62,11 +65,11 @@ function App() {
           <Route path='/blog' element={<Blog />} />
 
           {Object.keys(blogs).map((UUID) => {
-              return (
-                <Route path={`blog/${UUID}`} element={<BlogPost/>} />
-              )
-            })
-            }
+            return (
+              <Route path={`blog/${UUID}`} element={<BlogPost />} />
+            )
+          })
+          }
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </main>

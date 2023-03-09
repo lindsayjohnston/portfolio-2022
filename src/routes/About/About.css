@@ -9,6 +9,14 @@
     border-radius: 1rem;
 }
 
+.about-page .links{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .about-page .section-even {
     border: 1px solid var(--hl-color-2);
     border-radius: 1rem;
