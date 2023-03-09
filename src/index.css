@@ -5,9 +5,11 @@
 :root{
   --main-light-color: #ffffff;
   --second-light-color:  #dbd9d9;
-  --main-dark-color: #000000;
+  --main-dark-color: #293241;
+  --second-dark-color: #3d5a80;
   --hl-color-1: #fdd74c;
   --hl-color-2: #35bbef;
+  --hl-color-3: #ee6c4d;
   --z-splash-screen: 3;
   --z-header: 2;
   --z-title: 1;
@@ -19,6 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-light-color);
+  color: var(--main-dark-color)
 }
 
 .secondary-font {
