@@ -28,13 +28,18 @@ export default function CreateAWebpageBlogPost() {
                <div className="step-body">
                   <p>
                      Open a text editor like Notepad on Windows or TextEdit on Mac. If you already have an
-                     <a href="https://www.codecademy.com/article/what-is-an-ide">IDE</a> set up
+                     <a href="https://www.codecademy.com/article/what-is-an-ide"> IDE </a>set up
                      (like VisualStudio Code) you can use that as well.
                   </p>
-                  <p className="important-info">
-                     Don’t use something like Word or Pages, the “whitespace” on a fancy document editor will be full of invisible,
-                     extra code that may mess up your simple website.
-                  </p>
+                  <div className="important-info">
+                     <div className="icon-container">
+                        <img className="icon" src="../media/icons/circle-info-solid.svg" />
+                     </div>
+                     <p>
+                        Don’t use something like Word or Pages, the “whitespace” on a fancy document editor will be full of invisible,
+                        extra code that may mess up your simple website.
+                     </p>
+                  </div>
                   <p>
                      Copy the snippet below into the text editor:
                   </p>
@@ -56,22 +61,35 @@ export default function CreateAWebpageBlogPost() {
                      </code>
                   </pre>
                   <a href="#">ADD A GIST HERE</a>
-                  <p className="important-info">
-                     Even as a seasoned web developer, I still copy and paste this “markdown” snippet every
-                     time I create a webpage from scratch.
-                     Reserve your memory for mom’s birthday and Google everything else.
-                  </p>
+                  <div className="important-info">
+                     <div className="icon-container">
+                        <img className="icon" src="../media/icons/circle-info-solid.svg" />
+                     </div>
+                     <p>
+                        Even as a seasoned web developer, I still copy and paste this “markdown” snippet every
+                        time I create a webpage from scratch.
+                        Reserve your memory for mom’s birthday and Google everything else.
+                     </p>
+                  </div>
                   <p>
                      Feel free to edit the text in the &lt;body&gt; and &lt;title&gt; tags to whatever your heart desires. “Hello world” is a classic.
                   </p>
                   <p>
                      Save this as an “.html” file.
                   </p>
-                  <img src="../media/blog/CreateAWebpage/save-to-html.png" />
-                  <p className="important-info">
-                     “Index.html” is the super boring name that most websites use for their HTML foundation.
-                     You could call it “web-borgs-r-us.html” if you like.
-                  </p>
+                  <div className="img-container">
+                     <img src="../media/blog/CreateAWebpage/save-to-html.png" />
+                  </div>
+                  <div className="important-info">
+                     <div className="icon-container">
+                        <img className="icon" src="../media/icons/circle-info-solid.svg" />
+                     </div>
+                     <p>
+                        “Index.html” is the super boring name that most websites use for their HTML foundation.
+                        You could call it “web-borgs-r-us.html” if you like.
+                     </p>
+                  </div>
+
                </div>
             </div>
             <div className="step even-step">
