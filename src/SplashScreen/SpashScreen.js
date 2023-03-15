@@ -4,6 +4,10 @@ import './SplashScreen.css';
 const SplashScreen = (props) => {
     const [screenShown, setScreenShown] = useState(true);
 
+    useEffect(()=>{
+        setTimeout(()=> closeScreen(), 3000)
+    }, [])
+
     const closeScreen = ()=>{
         //start fading out title
         const title = document.getElementById('splash-title-div');
@@ -11,9 +15,9 @@ const SplashScreen = (props) => {
         title.classList.add('fade-out');
         //start fading out screen .5s later
         const screen = document.getElementById('splash-screen');
-        setTimeout(()=>screen.classList.add('fade-out'), 500);
+        setTimeout(()=>screen.classList.add('fade-out'), 3000);
         //when everything's faded, remove the screen from dom
-        setTimeout(()=>setScreenShown(false), 3000)
+        setTimeout(()=>setScreenShown(false), 4500)
     }
 
     if (screenShown) {

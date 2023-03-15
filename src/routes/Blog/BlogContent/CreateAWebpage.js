@@ -7,7 +7,7 @@ export default function CreateAWebpageBlogPost() {
          <p className="intro">This is a quick and dirty guide to making you a web developer in the next 9 minutes.
             Set your timer, and let’s get nerdy. </p>
          <div className="prerequisites">
-            <p>
+         
                <strong>PREREQUISITES:</strong>
                <ul>
                   <li>
@@ -20,7 +20,7 @@ export default function CreateAWebpageBlogPost() {
                      Some sort of text editor (Notepad comes standard on Windows and TextEdit on Mac)
                   </li>
                </ul>
-            </p>
+            
          </div>
          <div className="steps">
             <div className="step odd-step">
@@ -60,7 +60,7 @@ export default function CreateAWebpageBlogPost() {
                   `}
                      </code>
                   </pre>
-                  <a href="#">ADD A GIST HERE</a>
+                  {/* <a href="#">ADD A GIST HERE</a> */}
                   <div className="important-info">
                      <div className="icon-container">
                         <img className="icon" src="../media/icons/circle-info-solid.svg" />
@@ -104,7 +104,7 @@ export default function CreateAWebpageBlogPost() {
                   </div>
                   <p>
                      Notice how the text in the <strong>&lt;title&gt;</strong> tag corresponds with the text that shows up in the browser tab and how the text in the
-                     <strong>&lt;body&gt;</strong> tag shows up on the page. Play around with these. Have a little fun!
+                     <strong> &lt;body&gt;</strong> tag shows up on the page. Play around with these. Have a little fun!
                   </p>
                </div>
             </div>

@@ -1,5 +1,6 @@
 import './App.css';
 import { useLocation, Routes, Route, Link } from "react-router-dom";
+import ScrollToTop from './ScrollToTop';
 import SplashScreen from './SplashScreen/SpashScreen';
 import Work from './routes/Work/Work.js';
 import About from './routes/About/About.js';
@@ -11,8 +12,6 @@ import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
 import { blogs } from './routes/Blog/blogObject';
 import BlogPost from './routes/Blog/BlogPost/BlogPost';
-
-
 
 function App() {
   const [currentPage, setCurrentPage] = useState(null);
@@ -30,11 +29,10 @@ function App() {
         }
       }
     }
-    console.log(links);
   }, [location])
 
   return (
-    <div className="app">
+    <div className="app" id="app">
       <SplashScreen />
       <header className="app-header flex-row">
         <nav >
@@ -55,7 +53,8 @@ function App() {
           <h1 className='top-title'>lindsay k. johnston</h1>
         </nav>
       </header>
-      <main>
+      <main id="main">
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Work />} />
           <Route path='/work/music' element={<Music />} />
@@ -66,7 +65,7 @@ function App() {
 
           {Object.keys(blogs).map((UUID) => {
             return (
-              <Route path={`blog/${UUID}`} element={<BlogPost />} />
+              <Route key={UUID} path={`blog/${UUID}`} element={<BlogPost />} />
             )
           })
           }

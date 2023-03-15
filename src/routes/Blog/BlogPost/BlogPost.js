@@ -11,6 +11,7 @@ export default function BlogPost() {
       <div className="blog-post-page">
          <h2 className="blog-title">{blogs[UUID].title}</h2>
          <img className="blog-image" src={blogs[UUID].img} />
+         <p><strong>{blogs[UUID].date}</strong></p>
          {blogs[UUID].content}
       </div>
    )

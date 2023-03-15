@@ -1,14 +1,19 @@
-.contact-page{
-   display:flex;
+.contact-page {
+   display: flex;
    flex-direction: column;
    align-items: center
 }
 
-.contact-page .section-even{
+.contact-page .section-even {
    border: 1px solid var(--hl-color-2);
    border-radius: 1rem;
-   width:100%;
    display: flex;
    flex-direction: column;
    align-items: center;
+   width: 100%;
+   padding: 1rem;
+}
+
+.contact-page .section-even a{
+   width: 200px;
 }

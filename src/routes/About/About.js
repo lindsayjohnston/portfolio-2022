@@ -7,7 +7,7 @@ const About = () => {
         <div className="about-page page-content">
             <h2>About Me</h2>
             <div className='section-even'>
-                <img src="../media/about/lindsay-glasses.png" />
+                <img src="../media/about/lindsay-glasses345x426px.png" />
             </div>
 
             <div className='section-odd'>
@@ -19,9 +19,9 @@ const About = () => {
                     I strive to communicate directly and honestly, work efficiently,
                     and push for female representation in historically male-dominated fields. </p>
             </div>
-            <div className='links'>
+            <div className='links section-even'>
                 <a className='secondary-link-style'
-                    href="https://lkj-website-media-jan2022.s3.us-east-2.amazonaws.com/Lindsay_Johnston_WD_Resume_Aug2022.pdf"
+                    href="https://portfolio-2023.s3.us-east-2.amazonaws.com/Lindsay_Johnston_WD_Resume_Mar2023.pdf"
                     target="_blank">Resume</a>
                 <Link className='secondary-link-style' to="/">My Work</Link>
             </div>

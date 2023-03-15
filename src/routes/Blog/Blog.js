@@ -41,20 +41,24 @@ const Blog = () => {
 
                 return (
 
-                    <Link to={`/blog/${UUID}`}>
+                    <Link to={`/blog/${UUID}`} key={UUID}>
                         <section className={sectionClass}>
 
                             <div className="text-area">
                                 <h3>{blogs[UUID].title}</h3>
                                 <p>{blogs[UUID].snippet}</p>
+                                <p><strong>{blogs[UUID].date}</strong></p>
                             </div>
-                            <img src={blogs[UUID].img} />
+                            <img src={blogs[UUID].thumbnail} />
                         </section>
                     </Link>
 
 
                 )
             })}
+            <div>
+                <h3>More posts coming soon!</h3>
+            </div>
         </div>
     )
 }

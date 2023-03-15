@@ -1,10 +1,10 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --main-light-color: #ffffff;
-  --second-light-color:  #dbd9d9;
+  --second-light-color: #dbd9d9;
   --main-dark-color: #293241;
   --second-dark-color: #3d5a80;
   --hl-color-1: #fdd74c;
@@ -15,13 +15,19 @@
   --z-title: 1;
   --z-main: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-light-color);
-  color: var(--main-dark-color)
+  color: var(--main-dark-color);
+
 }
 
 .secondary-font {
@@ -30,7 +36,7 @@ body {
 
 /* https://css-tricks.com/rem-global-em-local/ */
 
-html{
+html {
   font-size: 18px;
 }
 
@@ -39,24 +45,31 @@ code {
     monospace;
 }
 
-h2, h3, h4, h5, h6, ul, p, a{
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+a {
   margin: .5rem 0;
 }
 
 
-ul{
+ul {
   list-style-type: none;
   padding: 0;
 }
 
-a{
+a {
   text-decoration: none;
-  color: var(--main-dark-color);
-  width:fit-content;
+  color: var(--hl-color-2);
+  width: fit-content;
 }
 
-a:hover{
-  color: var(--hl-color-2);
+a:hover {
+  color: var(--second-dark-color);
 }
 
 .secondary-link-style {
@@ -64,40 +77,45 @@ a:hover{
   color: var(--main-light-color);
   padding: .5rem;
   border-radius: 1rem;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  font-weight: bold;
 }
 
-.secondary-link-style:hover{
+.secondary-link-style:hover {
   color: var(--main-light-color);
+  transform: scale(1.02);
 }
 
-.page-content{
+.page-content {
   padding: 1rem;
-  width:100%;
+  width: 100%;
 }
 
-.flex-column{
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
   flex-direction: row;
 }
 
-.underline{
+.underline {
   text-decoration: underline;
-}
-
-.underline:hover{
   text-decoration-color: var(--hl-color-2);
 }
 
-.fade-in{
+.underline:hover {
+  text-decoration-color: var(--main-dark-color);
+}
+
+.fade-in {
   opacity: 0;
   animation-name: fadein;
-  animation-delay: 2s;
-  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -112,10 +130,10 @@ a:hover{
   }
 }
 
-.fade-out{
+.fade-out {
   opacity: 1;
   animation-name: fadeOut;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -129,5 +147,3 @@ a:hover{
     opacity: 0;
   }
 }
-
-

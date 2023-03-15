@@ -5,16 +5,22 @@
 }
 
 .about-page img {
-    width:100%;
+    width: 100%;
     border-radius: 1rem;
 }
 
-.about-page .links{
+.about-page .links {
     padding: 1rem;
     margin-bottom: 1rem;
-    width: 300px;
     display: flex;
-    justify-content: space-between;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    min-width: 240px;
+}
+
+.about-page .links a{
+    width:100%;
 }
 
 .about-page .section-even {
@@ -30,8 +36,15 @@
     background-color: var(--hl-color-1);
     border-radius: 1rem;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
-.about-page .section-odd p{
+.about-page .section-odd p {
     text-align: center;
 }
+
+@media only screen and (max-width: 500px) {
+    .about-page .section-even {
+       width:100%;
+    }
+ }

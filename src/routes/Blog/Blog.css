@@ -4,11 +4,10 @@
     align-items: center;
 }
 
-
-
 .blog-page a {
     margin: 0;
     width: 100%;
+    color: var(--main-dark-color)
 }
 
 .blog-page a:hover {
@@ -24,17 +23,7 @@
     transition: all .2s ease-in-out;
 }
 
-@media only screen and (max-width: 500px) {
-    .blog-page p,
-    .blog-page h2,
-    .blog-page h3 {
-        text-align: center;
-    }
 
-    .blog-page section {
-        flex-direction: column;
-    }
-}
 
 .blog-page section:hover {
     transform: scale(1.02);
@@ -69,4 +58,21 @@
 .blog-page .section-odd img,
 .blog-page .section-even img {
     height: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+    .blog-page p,
+    .blog-page h2,
+    .blog-page h3 {
+        text-align: center;
+    }
+
+    .blog-page section {
+        flex-direction: column;
+    }
+
+    .blog-page .highlighted-blog img {
+        width: unset;
+        max-width: 100%;
+    }
 }
