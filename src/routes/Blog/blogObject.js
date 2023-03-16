@@ -3,10 +3,10 @@ import CreateAWebpageBlogPost from "./BlogContent/CreateAWebpage"
 
 export const blogs = {
    "create-your-first-webpage": {
-      date: "1-1-2023",
       title: "Create Your First Webpage",
       snippet: "Go from 0 to Web Developer in 9 minutes or your money back!",
       img: "../media/blog/CreateAWebpage/create-a-webpage.png",
+      imgAlt: "computer",
       thumbnail: "../media/blog/CreateAWebpage/create-a-webpage365x243.png",
       highlight: true,
       content: <CreateAWebpageBlogPost />,

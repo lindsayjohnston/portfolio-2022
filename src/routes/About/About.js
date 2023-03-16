@@ -7,7 +7,7 @@ const About = () => {
         <div className="about-page page-content">
             <h2>About Me</h2>
             <div className='section-even'>
-                <img src="../media/about/lindsay-glasses345x426px.png" />
+                <img alt="lindsay with glasses" src="../media/about/lindsay-glasses345x426px.png" />
             </div>
 
             <div className='section-odd'>
@@ -22,7 +22,8 @@ const About = () => {
             <div className='links section-even'>
                 <a className='secondary-link-style'
                     href="https://portfolio-2023.s3.us-east-2.amazonaws.com/Lindsay_Johnston_WD_Resume_Mar2023.pdf"
-                    target="_blank">Resume</a>
+                    target="_blank"
+                    rel="noreferrer">Resume</a>
                 <Link className='secondary-link-style' to="/">My Work</Link>
             </div>
 

@@ -6,7 +6,7 @@ import Work from './routes/Work/Work.js';
 import About from './routes/About/About.js';
 import Contact from './routes/Contact/Contact.js';
 import Blog from './routes/Blog/Blog.js';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Music from './routes/Work/Music/Music';
 import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
@@ -14,7 +14,6 @@ import { blogs } from './routes/Blog/blogObject';
 import BlogPost from './routes/Blog/BlogPost/BlogPost';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(null);
   const location = useLocation();
 
   useEffect(() => {

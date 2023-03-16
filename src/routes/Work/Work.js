@@ -13,8 +13,8 @@ const workTiles = {
     },
     music: {
         title: "Music",
-        type: "video/mp4",
-        src: "../media/work/bear-named-sue-clip.mp4",
+        type: "img/jpg",
+        src: "../media/work/vanna-oh.gif",
         link: '/work/music'
     },
     creative: {
@@ -46,11 +46,13 @@ const Work = (props) => {
                             <picture>
                                 {/* <source srcSet='../media/work/sad-mode-album-cover-768x506.webp' type="image/webp"/> */}
                                 <source srcSet={workTiles[key].src} type={workTiles[key].type} />
-                                <img alt={workTiles[key].alt}
+                                <img 
+                                    alt={workTiles[key].alt}
                                     src={workTiles[key].src}></img>
                             </picture>
                             :
-                            <video muted autoPlay={"autoplay"} loop={true} >
+                            // There were too many user-experience issues with videos
+                            <video muted autoPlay={"autoplay"} loop={true} disablePictureInPicture >
                                 <source src={workTiles[key].src} type={workTiles[key].type}></source>
                             </video>
                         }

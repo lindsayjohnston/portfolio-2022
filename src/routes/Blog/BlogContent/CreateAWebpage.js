@@ -7,20 +7,20 @@ export default function CreateAWebpageBlogPost() {
          <p className="intro">This is a quick and dirty guide to making you a web developer in the next 9 minutes.
             Set your timer, and let’s get nerdy. </p>
          <div className="prerequisites">
-         
-               <strong>PREREQUISITES:</strong>
-               <ul>
-                  <li>
-                     A computer
-                  </li>
-                  <li>
-                     Internet browser (Chrome, Safari, Firefox etc.)
-                  </li>
-                  <li>
-                     Some sort of text editor (Notepad comes standard on Windows and TextEdit on Mac)
-                  </li>
-               </ul>
-            
+
+            <strong>PREREQUISITES:</strong>
+            <ul>
+               <li>
+                  A computer
+               </li>
+               <li>
+                  Internet browser (Chrome, Safari, Firefox etc.)
+               </li>
+               <li>
+                  Some sort of text editor (Notepad comes standard on Windows and TextEdit on Mac)
+               </li>
+            </ul>
+
          </div>
          <div className="steps">
             <div className="step odd-step">
@@ -33,7 +33,7 @@ export default function CreateAWebpageBlogPost() {
                   </p>
                   <div className="important-info">
                      <div className="icon-container">
-                        <img className="icon" src="../media/icons/circle-info-solid.svg" />
+                        <img alt="info icon" className="icon" src="../media/icons/circle-info-solid.svg" />
                      </div>
                      <p>
                         Don’t use something like Word or Pages, the “whitespace” on a fancy document editor will be full of invisible,
@@ -63,7 +63,7 @@ export default function CreateAWebpageBlogPost() {
                   {/* <a href="#">ADD A GIST HERE</a> */}
                   <div className="important-info">
                      <div className="icon-container">
-                        <img className="icon" src="../media/icons/circle-info-solid.svg" />
+                        <img alt="info icon" className="icon" src="../media/icons/circle-info-solid.svg" />
                      </div>
                      <p>
                         Even as a seasoned web developer, I still copy and paste this “markdown” snippet every
@@ -78,11 +78,14 @@ export default function CreateAWebpageBlogPost() {
                      Save this as an “.html” file.
                   </p>
                   <div className="img-container">
-                     <img src="../media/blog/CreateAWebpage/save-to-html.png" />
+                     <img alt="save to html example"
+                        src="../media/blog/CreateAWebpage/save-to-html.png" />
                   </div>
                   <div className="important-info">
                      <div className="icon-container">
-                        <img className="icon" src="../media/icons/circle-info-solid.svg" />
+                        <img className="icon"
+                           alt="info icon"
+                           src="../media/icons/circle-info-solid.svg" />
                      </div>
                      <p>
                         “Index.html” is the super boring name that most websites use for their HTML foundation.
@@ -100,7 +103,8 @@ export default function CreateAWebpageBlogPost() {
                      You should see your first-ever, hand-rolled webpage.
                   </p>
                   <div className="img-container">
-                     <img src="../media/blog/CreateAWebpage/webpage-image.png" />
+                     <img alt="simple webpage"
+                        src="../media/blog/CreateAWebpage/webpage-image.png" />
                   </div>
                   <p>
                      Notice how the text in the <strong>&lt;title&gt;</strong> tag corresponds with the text that shows up in the browser tab and how the text in the
