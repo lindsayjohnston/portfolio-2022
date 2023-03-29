@@ -7,7 +7,6 @@ export default function CreateAWebpageBlogPost() {
          <p className="intro">This is a quick and dirty guide to making you a web developer in the next 9 minutes.
             Set your timer, and let’s get nerdy. </p>
          <div className="prerequisites">
-
             <strong>PREREQUISITES:</strong>
             <ul>
                <li>

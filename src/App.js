@@ -12,6 +12,7 @@ import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
 import { blogs } from './routes/Blog/blogObject';
 import BlogPost from './routes/Blog/BlogPost/BlogPost';
+import BlogNew from './routes/BlogNew/BlogNew'
 
 function App() {
   const location = useLocation();
@@ -61,6 +62,7 @@ function App() {
           <Route path='/work/creative' element={<Creative />} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/blog-new' element={<BlogNew />} />
 
           {Object.keys(blogs).map((UUID) => {
             return (
