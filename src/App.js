@@ -13,6 +13,7 @@ import Creative from './routes/Work/Creative/Creative';
 import { blogs } from './routes/Blog/blogObject';
 import BlogPost from './routes/Blog/BlogPost/BlogPost';
 import BlogNew from './routes/BlogNew/BlogNew'
+import BlogPostNew from './routes/BlogNew/BlogPostNew/BlogPostNew';
 
 function App() {
   const location = useLocation();
@@ -68,8 +69,10 @@ function App() {
             return (
               <Route key={UUID} path={`blog/${UUID}`} element={<BlogPost />} />
             )
-          })
-          }
+          })}
+
+          {/* Make routes for BlogNew */}
+          <Route path='blog-new/:blogId' element = {<BlogPostNew />}/>
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </main>
