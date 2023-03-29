@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './BlogPostNew.css'
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import StringToHTMLParser from "../StringToHTMLParser";
 
 export default function BlogPost(props) {
    const params = useParams()
@@ -22,10 +23,10 @@ export default function BlogPost(props) {
             postData._id &&
             <>
                <h2 className="blog-title">{postData.title}</h2>
-               <img alt={postData.imgAlt} className="blog-image"
-                  src={postData.img} />
+               <img alt={postData.imgAltText} className="blog-image"
+                  src={postData.mainImage} />
                <p><strong>{postData.date}</strong></p>
-               {postData.content}
+               <StringToHTMLParser stringToParse ={postData.content}/>
             </>
 
          }

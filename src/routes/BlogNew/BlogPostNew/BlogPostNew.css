@@ -52,6 +52,9 @@
    list-style-type: unset;
    margin-left: 1rem;
 }
+.blog-post-page .steps{
+   width:100%;
+}
 
 .blog-post-page .step {
    margin-top: 1rem;
