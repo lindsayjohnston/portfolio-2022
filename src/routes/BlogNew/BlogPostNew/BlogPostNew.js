@@ -10,10 +10,13 @@ export default function BlogPost(props) {
 
    const [postData, setPostData] = useState({ _id: null })
    const [blogPostError, setBlogPostError] = useState(false)
+   const [date, setDate] = useState("")
 
    useEffect(() => {
       axios.get(baseURL).then((response) => {
          setPostData(response.data)
+         let humanReadableDate = new Date(response.data.date).toDateString()
+         setDate(humanReadableDate)
       }).catch(setBlogPostError(true))
    }, [])
 
@@ -25,8 +28,11 @@ export default function BlogPost(props) {
                <h2 className="blog-title">{postData.title}</h2>
                <img alt={postData.imgAltText} className="blog-image"
                   src={postData.mainImage} />
-               <p><strong>{postData.date}</strong></p>
-               <StringToHTMLParser stringToParse ={postData.content}/>
+               <p><strong>{date}</strong></p>
+               <div className="blog-post-content">
+                  <StringToHTMLParser stringToParse={postData.content} />
+               </div>
+
             </>
 
          }

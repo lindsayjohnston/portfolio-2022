@@ -48,6 +48,10 @@
    width: 20px;
 }
 
+.blog-post-page a{
+   margin-right: 3px;
+}
+
 .blog-post-page .prerequisites ul {
    list-style-type: unset;
    margin-left: 1rem;
@@ -71,6 +75,7 @@
 
 .blog-post-page code {
    width: 100%;
+   
    display: block;
    overflow: auto;
    color: var(--hl-color-3);

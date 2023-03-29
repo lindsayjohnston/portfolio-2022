@@ -4,7 +4,7 @@ import BlockCreator from "./BlockCreator";
 export default function StringToHTMLParser(props) {
 
    //PROPS
-      //stringToParse = string
+   //stringToParse = string
 
    const validTagTypes = {
       "intro": {
@@ -18,18 +18,18 @@ export default function StringToHTMLParser(props) {
       "important": {},
       "code": {},
       "img": {},
-      "strong":{}
+      "strong": {}
 
    }
 
-   const setErrorMessages = (messageArray) =>{
+   const setErrorMessages = (messageArray) => {
       let errorMessage = ""
-      messageArray.map(message =>{
+      messageArray.map(message => {
          errorMessage += message
       })
 
       const errorMessageArea = document.getElementById("error-message")
-      if(errorMessageArea){
+      if (errorMessageArea) {
          errorMessageArea.innerHTML = errorMessage
       }
    }
@@ -39,26 +39,27 @@ export default function StringToHTMLParser(props) {
    const handleChunks = () => {
       const blockArray = []
       let errorMessages = []
-   
 
-      let string = props.stringToParse.replaceAll("\n", "")
+
+      // let string = props.stringToParse.replaceAll("\n", "")
+      let string = props.stringToParse
 
       while (string.length > -1) {
          string = string.trim() //remove whitespace from beginning and end
 
          if (!string.includes("<") || !string.includes(">")) {
-            blockArray.push({type:"string", content: string})
+            blockArray.push({ type: "string", content: string })
             setErrorMessages(errorMessages)
-            return ({blockArray: blockArray })
+            return ({ blockArray: blockArray })
          }
 
          let startTagOpenIndex = string.indexOf("<")
          const prefixString = string.substring(0, startTagOpenIndex)
 
          //DEAL WITH LEADING CHARACTERS
-         if(prefixString.length> 0){
+         if (prefixString.length > 0) {
             //take that off, send as string
-            blockArray.push({type: "string", content: prefixString})
+            blockArray.push({ type: "string", content: prefixString })
             string = string.slice(prefixString.length)
             startTagOpenIndex = string.indexOf("<") //reset opening tag index
          }
@@ -69,24 +70,24 @@ export default function StringToHTMLParser(props) {
 
          //CHECK TAG TYPE
          if (!validTagTypes[typeOfTag]) {
-            blockArray.push({type:"string", content: string})
+            blockArray.push({ type: "string", content: string })
             errorMessages.push("Invalid tag type.")
             setErrorMessages(errorMessages)
-            return ({blockArray: blockArray })
+            return ({ blockArray: blockArray })
          }
+
 
          const endTag = "</" + typeOfTag + ">"
          let endTagIndex = string.indexOf(endTag)
 
          //CHECK TAG IS CLOSED
          if (endTagIndex < 0) {
-            blockArray.push({type:"string", content: string})
+            blockArray.push({ type: "string", content: string })
             errorMessages.push("Tag needs to be closed.")
             setErrorMessages(errorMessages)
-            return ({blockArray: blockArray })
+            return ({ blockArray: blockArray })
          } else {
             //WE HAVE AT LEAST ONE POTENTIAL TAG
-
             endTagIndex = string.indexOf(endTag) + endTag.length
             //parse that part
             let currentChunk = string.substring(0, endTagIndex)
@@ -94,6 +95,9 @@ export default function StringToHTMLParser(props) {
             // remove tags
 
             let content = currentChunk.replace(openTag, "").replace(endTag, "")
+            if (typeOfTag !== "code") {
+               content= content.replaceAll("\n", "")  //code snippets should keep whitespace
+            } 
 
             blockArray.push({ type: typeOfTag, content: content })
 
@@ -118,7 +122,7 @@ export default function StringToHTMLParser(props) {
       // debugger
       return (
          <>
-            {  dataForBlocks.blockArray &&
+            {dataForBlocks.blockArray &&
                dataForBlocks.blockArray.map((blockInfo, i) => {
                   return <BlockCreator blockInfo={blockInfo} key={i} />
                })
