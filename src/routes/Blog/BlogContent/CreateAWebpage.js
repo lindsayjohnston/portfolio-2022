@@ -79,7 +79,7 @@ export default function CreateAWebpageBlogPost() {
                   </p>
                   <div className="img-container">
                      <img alt="save to html example"
-                        src="../media/blog/CreateAWebpage/save-to-html.png" />
+                        src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/CreateYourFirstWebpage/save-to-html.png" />
                   </div>
                   <div className="important-info">
                      <div className="icon-container">
@@ -104,7 +104,7 @@ export default function CreateAWebpageBlogPost() {
                   </p>
                   <div className="img-container">
                      <img alt="simple webpage"
-                        src="../media/blog/CreateAWebpage/webpage-image.png" />
+                        src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/CreateYourFirstWebpage/webpage-image.png" />
                   </div>
                   <p>
                      Notice how the text in the <strong>&lt;title&gt;</strong> tag corresponds with the text that shows up in the browser tab and how the text in the
