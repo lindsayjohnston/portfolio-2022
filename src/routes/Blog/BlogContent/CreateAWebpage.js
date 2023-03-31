@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CreateAWebpageBlogPost() {
    //EVERY POST NEEDS 'blog-post-content' class
@@ -109,6 +110,7 @@ export default function CreateAWebpageBlogPost() {
                      Notice how the text in the <strong>&lt;title&gt;</strong> tag corresponds with the text that shows up in the browser tab and how the text in the
                      <strong> &lt;body&gt;</strong> tag shows up on the page. Play around with these. Have a little fun!
                   </p>
+                  <Link to="../blog/set-up-ide"> Next up... Set up an IDE</Link>
                </div>
             </div>
          </div>
