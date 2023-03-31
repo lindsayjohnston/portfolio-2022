@@ -10,7 +10,6 @@ import { useEffect } from 'react';
 import Music from './routes/Work/Music/Music';
 import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
-import { blogs } from './routes/Blog/blogObject';
 import BlogPost from './routes/Blog/BlogPost/BlogPost';
 import BlogNew from './routes/BlogNew/BlogNew'
 import BlogPostNew from './routes/BlogNew/BlogPostNew/BlogPostNew';
@@ -65,14 +64,6 @@ function App() {
           <Route path='/blog' element={<Blog />} />
           <Route path='/blog/:blogUUID' element={<BlogPost />} />
           <Route path='/blog-new' element={<BlogNew />} />
-
-          {/* {Object.keys(blogs).map((UUID) => {
-            return (
-              <Route key={UUID} path={`blog/${UUID}`} element={<BlogPost />} />
-            )
-          })} */}
-
-          {/* Make routes for BlogNew */}
           <Route path='blog-new/:blogId' element = {<BlogPostNew />}/>
           <Route path='/contact' element={<Contact />} />
         </Routes>

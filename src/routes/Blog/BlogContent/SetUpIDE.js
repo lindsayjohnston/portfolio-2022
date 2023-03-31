@@ -85,10 +85,13 @@ export default function SetUpIDEBlogPost() {
                   <div class="img-container">
                      <img alt="New File icon" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/file-explorer-icon.png" />
                   </div>
-                  <p>Create a file called 'index.html' and add some boilerplate HTML
-                     <a target="_blank" rel="noreferrer" href="#"> LINK TO GIST</a>to it.</p>
+                  <p>Create a file called 'index.html' and add some 
+                     <a target="_blank" rel="noreferrer" href="https://gist.github.com/lindsayjohnston/f3b21aa79fd72b9a7b81f5b3881b6ec9"> boilerplate HTML</a>to it.</p>
                   <div class="img-container"><img alt="HTML file" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/new-file.png" /></div>
                   <p>Double check that your new file is in the folder you created on the desktop.</p>
+                  <div class="img-container">
+                     <img alt="new file created" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/open-folder.gif" />
+                  </div>
                </div></div></div>
 
 

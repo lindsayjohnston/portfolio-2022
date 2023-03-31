@@ -89,7 +89,6 @@ export default function BlockCreator(props) {
          if(!imageObject){
             return "ERROR IN IMG"
          }
-         const array = props.blockInfo.content.split(",")
          return (
             <div className="img-container">
                <img alt={imageObject.alt}
