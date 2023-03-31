@@ -6,7 +6,7 @@
    width: 100%;
 }
 
-.blog-post-page *{
+.blog-post-page * {
    margin-bottom: 1rem;
 }
 
@@ -32,6 +32,11 @@
    background-color: var(--hl-color-1);
    border-radius: 1rem;
    padding: 1rem;
+}
+
+.blog-post-page .prerequisites li {
+   margin-bottom: unset;
+   margin-left: 1rem
 }
 
 .blog-post-page .important-info {
