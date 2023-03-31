@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function SetUpIDEBlogPost() {
    //EVERY POST NEEDS 'blog-post-content' class
    return (
       <div className="blog-post-content">
-         <p class="intro">In the <a target="_blank" rel="noreferrer" href="https://www.lindsaykjohnston.com/blog/create-your-first-webpage"> Create the
-            Simplest Webpage Possible article</a>,
+         <p class="intro">In the <Link to="../blog/create-your-first-webpage"> Create the
+            Simplest Webpage Possible article</Link>,
             we created a webpage using the text editor that came with our computer.
             Today, we’ll become full-fledged computer programmers by setting up an
             <a target="_blank" rel="noreferrer" href="https://www.codecademy.com/article/what-is-an-ide"> Integrated Development Environment</a>,
             also known as an “IDE.”</p>
          <div class="important-info"><div class="icon-container">
-            <img alt="info icon" class="icon" src="../media/icons/circle-info-solid.svg" />
+            <img alt="info icon" class="icon" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/circle-info-solid.svg" />
          </div>
             <p>Programmers LOVE using acronyms almost as much as they love poor communication.
                If you forget what IDE means, flip all the gatekeepers the bird,
@@ -33,7 +34,7 @@ export default function SetUpIDEBlogPost() {
                      <img alt="VSCode Homepage" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/vs-code-homepage.png" />
                   </div><div class="important-info">
                      <div class="icon-container">
-                        <img alt="info icon" class="icon" src="../media/icons/circle-info-solid.svg" />
+                        <img alt="info icon" class="icon" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/circle-info-solid.svg" />
                      </div>
                      <p>Don’t forget the 'Code' part in Visual Studio Code.
                         'Visual Studio' is more for C++ and .NET developers.
@@ -76,7 +77,7 @@ export default function SetUpIDEBlogPost() {
                   <div class="img-container">
                      <img alt="New File in menu" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/vs-code-menu.png" /></div>
                   <div class="important-info"><div class="icon-container">
-                     <img alt="info icon" class="icon" src="../media/icons/circle-info-solid.svg" /></div>
+                     <img alt="info icon" class="icon" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/circle-info-solid.svg" /></div>
                      <p>If you don’t see the File Explorer window or you lose it,
                         you can click on this icon in the upper-left corner of the screen to find it again:
                      </p>

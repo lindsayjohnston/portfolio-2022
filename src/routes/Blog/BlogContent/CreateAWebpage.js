@@ -32,7 +32,7 @@ export default function CreateAWebpageBlogPost() {
                   </p>
                   <div className="important-info">
                      <div className="icon-container">
-                        <img alt="info icon" className="icon" src="../media/icons/circle-info-solid.svg" />
+                        <img alt="info icon" className="icon" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/circle-info-solid.svg" />
                      </div>
                      <p>
                         Don’t use something like Word or Pages, the “whitespace” on a fancy document editor will be full of invisible,
@@ -62,7 +62,7 @@ export default function CreateAWebpageBlogPost() {
                   {/* <a href="#">ADD A GIST HERE</a> */}
                   <div className="important-info">
                      <div className="icon-container">
-                        <img alt="info icon" className="icon" src="../media/icons/circle-info-solid.svg" />
+                        <img alt="info icon" className="icon" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/circle-info-solid.svg" />
                      </div>
                      <p>
                         Even as a seasoned web developer, I still copy and paste this “markdown” snippet every
@@ -84,7 +84,7 @@ export default function CreateAWebpageBlogPost() {
                      <div className="icon-container">
                         <img className="icon"
                            alt="info icon"
-                           src="../media/icons/circle-info-solid.svg" />
+                           src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/circle-info-solid.svg" />
                      </div>
                      <p>
                         “Index.html” is the super boring name that most websites use for their HTML foundation.

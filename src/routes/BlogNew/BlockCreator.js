@@ -61,7 +61,7 @@ export default function BlockCreator(props) {
          return (
             <div className="important-info">
                <div className="icon-container">
-                  <img alt="info icon" className="icon" src="../media/icons/circle-info-solid.svg" />
+                  <img alt="info icon" className="icon" src="https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/circle-info-solid.svg" />
                </div>
                <p>
                   {props.blockInfo.content}
