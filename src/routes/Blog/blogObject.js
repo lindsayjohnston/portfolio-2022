@@ -1,5 +1,6 @@
 import React from "react"
 import CreateAWebpageBlogPost from "./BlogContent/CreateAWebpage"
+import SetUpIDEBlogPost from "./BlogContent/SetUpIDE"
 
 export const blogs = {
    "create-your-first-webpage": {
@@ -12,13 +13,16 @@ export const blogs = {
       content: <CreateAWebpageBlogPost />,
       date: "March 13, 2023"
    },
-   // UUID2: {
-   //    date: "2-2-2023",
-   //    title: "Title 2",
-   //    snippet: "Blah blah 2",
-   //    img: "../media/work/phony-famous-768x506.jpg",
-   //    highlight: true
-   // },
+   "set-up-ide": {
+      title: "Set up an IDE",
+      snippet: "Code like a pro with your very own Integrated Development Environment.",
+      img: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/vs-code-welcome.png",
+      imgAlt: "VS Code",
+      thumbnail: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/vs-code-welcome365x222.jpg",
+      highlight: false,
+      content: <SetUpIDEBlogPost />,
+      date: "March 30, 2023"
+   },
    // UUID3: {
    //    date: "3-3-3033",
    //    title: "Title 3",

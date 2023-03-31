@@ -63,13 +63,14 @@ function App() {
           <Route path='/work/creative' element={<Creative />} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/blog/:blogUUID' element={<BlogPost />} />
           <Route path='/blog-new' element={<BlogNew />} />
 
-          {Object.keys(blogs).map((UUID) => {
+          {/* {Object.keys(blogs).map((UUID) => {
             return (
               <Route key={UUID} path={`blog/${UUID}`} element={<BlogPost />} />
             )
-          })}
+          })} */}
 
           {/* Make routes for BlogNew */}
           <Route path='blog-new/:blogId' element = {<BlogPostNew />}/>

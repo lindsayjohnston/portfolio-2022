@@ -5,11 +5,13 @@ import { blogs } from '../blogObject'
 export default function BlogPost(props) {   
    let URL = window.location.href
    let UUID = URL.split("blog/")[1]
-   if(UUID.endsWith("/")){
-      //Trailing "/" was messing with UUID and images loading
-      UUID = UUID.replace("/", "")
-      window.location.href = "/blog/" + UUID
-   }
+
+
+   // if(UUID.endsWith("/")){
+   //    //Trailing "/" was messing with UUID and images loading
+   //    UUID = UUID.replace("/", "")
+   //    window.location.href = "/blog/" + UUID
+   // }
 
    return (
       <div className="blog-post-page">
