@@ -1,10 +1,11 @@
 import React from "react";
 import StringToHTMLParser from "./StringToHTMLParser";
+import { Link } from "react-router-dom";
 
 export default function BlockCreator(props) {
    switch (props.blockInfo.type) {
       case "intro":
-         return <p className="intro">{props.blockInfo.content}</p>
+         return <p className="intro"><StringToHTMLParser stringToParse={props.blockInfo.content} /></p>
       case "prereqs":
          let items = props.blockInfo.content.split(",")
          return (
@@ -39,7 +40,7 @@ export default function BlockCreator(props) {
          }
 
          const stepObject = createStepObject()
-         if(!stepObject){
+         if (!stepObject) {
             return "ERROR IN STEP"
          }
          return (
@@ -53,9 +54,9 @@ export default function BlockCreator(props) {
       case "p":
          return (<p><StringToHTMLParser stringToParse={props.blockInfo.content} /></p>)
       case "a":
-         let linkQualities = props.blockInfo.content.split(",")
+         let aQualities = props.blockInfo.content.split(",")
          return (
-            <a href={linkQualities[0]}>{linkQualities[1]}</a>
+            <a target = "_blank" rel="noreferrer" href={aQualities[0]}>{aQualities[1]}</a>
          )
       case "important":
          return (
@@ -69,38 +70,29 @@ export default function BlockCreator(props) {
             </div>
          )
       case "code":
+         const newLineReplacedString = props.blockInfo.content.replaceAll("(newline)", "\n")
          return (
             <pre>
-               <code>{props.blockInfo.content}</code>
+               <code>{newLineReplacedString}</code>
             </pre>
          )
       case "img":
-         const createImageObject = () => {
-            if (props.blockInfo.content) {
-               try {
-                  return JSON.parse(props.blockInfo.content)
-               } catch (e) {
-                  console.log(e)
-                  return { "src": "error", "alt": "error" }
-               }
-            }
-         }
-         const imageObject = createImageObject()
-         if(!imageObject){
-            return "ERROR IN IMG"
-         }
+         let imgQualities = props.blockInfo.content.split(",")
          return (
             <div className="img-container">
-               <img alt={imageObject.alt}
-                  src={imageObject.src} />
+               <img alt={imgQualities[0]} src={imgQualities[1]} />
             </div>
          )
+
       case "strong":
-         return(<strong>{props.blockInfo.content}</strong>)
-      
+         return (<strong>{props.blockInfo.content}</strong>)
+
       case "string":
-         // debugger
+
          return props.blockInfo.content
+      case "link":
+         let linkQualities = props.blockInfo.content.split(",")
+         return  <Link to={linkQualities[0]}>{linkQualities[1]}</Link>
 
       default:
          return "error in BlockCreator"

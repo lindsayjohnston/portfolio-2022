@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BlockCreator from "./BlockCreator";
+import { type } from "@testing-library/user-event/dist/type";
 
 export default function StringToHTMLParser(props) {
 
@@ -18,7 +19,8 @@ export default function StringToHTMLParser(props) {
       "important": {},
       "code": {},
       "img": {},
-      "strong": {}
+      "strong": {},
+      "link":{}
 
    }
 
@@ -41,8 +43,7 @@ export default function StringToHTMLParser(props) {
       let errorMessages = []
 
 
-      // let string = props.stringToParse.replaceAll("\n", "")
-      let string = props.stringToParse
+      let string = props.stringToParse.replaceAll("\n", "")
 
       while (string.length > -1) {
          string = string.trim() //remove whitespace from beginning and end
@@ -95,9 +96,6 @@ export default function StringToHTMLParser(props) {
             // remove tags
 
             let content = currentChunk.replace(openTag, "").replace(endTag, "")
-            if (typeOfTag !== "code") {
-               content= content.replaceAll("\n", "")  //code snippets should keep whitespace
-            } 
 
             blockArray.push({ type: typeOfTag, content: content })
 

@@ -2,19 +2,21 @@ import { Link } from 'react-router-dom';
 import './BlogNew.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { blogArrayNew } from './blogArrayNew';
 
 
 const BlogNew = () => {
     //get blogs from server
     const baseURL = "https://mongodb-test-ziu4.onrender.com/posts"
-    const [blogs, setBlogs] = useState(null)
+    const [blogs, setBlogs] = useState(blogArrayNew)
     const [blogsError, setBlogsError] = useState(false)
 
-    useEffect(() => {
-        axios.get(baseURL).then((response) => {
-            setBlogs(response.data)
-        }).catch(setBlogsError(true))
-    }, [])
+    //This is what we will use when everything is squared away
+    // useEffect(() => {
+    //     axios.get(baseURL).then((response) => {
+    //         setBlogs(response.data)
+    //     }).catch(setBlogsError(true))
+    // }, [])
 
     return (
         <div className="blog-page page-content">
