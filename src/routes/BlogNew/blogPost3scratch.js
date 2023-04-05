@@ -9,7 +9,7 @@ Most modern browsers have their own version of 'Dev Tools'
 but we’re going to focus on Chrome’s for this article.
 </important>
 <prereqs>
-   Internet browser (Chrome - Safari - Firefox etc.),Internet Connection
+   Chrome internet browser,Internet Connection
 </prereqs>
 <steps>
    <step>
@@ -28,7 +28,7 @@ but we’re going to focus on Chrome’s for this article.
          Right click anywhere on the webpage and click 'Inspect' 
          in the dropdown menu that appears:
          </p>
-         <img>menu with 'Inspect', SRC</img>
+         <img>menu with 'Inspect', https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/menu-with-inspect.png</img>
 "}
 </step>
 <step>
@@ -38,12 +38,12 @@ but we’re going to focus on Chrome’s for this article.
          If you correctly executed Steps 1 and 2 
          you should see the Dev Tools panel pop up:
          </p>
-         <img>dev tools panel, SRC</img>
+         <img>dev tools panel, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/dev-tools-panel.png</img>
          <important>
          If your Dev Tools panel is docked somewhere other than the right-hand side of the screen you can change the view by clicking the 3 dots in the 
          top right of the panel and choosing the 'Dock side' option you prefer.
          </important>
-         <img>dock side icon, SRC</img>
+         <img>dock side icon, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/dev-tools-docker.png</img>
 "}
 </step>
 <step>
@@ -54,7 +54,7 @@ but we’re going to focus on Chrome’s for this article.
          (like we did in step 2 but this time aiming for a headline). 
          You should see that element highlight in the Dev Tools Elements pane:
          </p>
-         <img>Dev Tools pane with header highlighted, SRC</img>
+         <img>Dev Tools pane with header highlighted, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/h3-highlighted.png</img>
 "}
 </step>
 <step>
@@ -64,17 +64,16 @@ but we’re going to focus on Chrome’s for this article.
          Double click on the text in the element that is highlighted in the 
          Elements pane and it should highlight even more specifically like so…
          </p>
-         <img>h3 text highlighted, SRC</img>
+         <img>h3 text highlighted, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/h3-text-highlighted.png</img>
          <p>
          Think of a really clever headline that you’d like to see on the front 
          page of the New York Times and type that into the text area instead. 
          </p>
-         <img>h3 text changed in dev tools pane, SRC</img>
+         <img>h3 text changed in dev tools pane, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/edit-h3-text.png </img>
          <p>
-         See the fruits of your hacking labor by clicking on the webpage again. 
          The headline should change to whatever you wrote. 
          </p>
-         <img>h3 text changed in browser, SRC</img>
+         <img>h3 text changed in browser, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/changed-headline.png</img>
 "}
 </step>
 <step>
@@ -89,5 +88,4 @@ but we’re going to focus on Chrome’s for this article.
 "}
 </step>
 </steps>
-
-<link>../blog-new/44444, Next up... Create an HTML Reference Guide</link>`
+`

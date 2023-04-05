@@ -81,4 +81,6 @@ export const blogString2 = `<intro>
 
 "
    }</step>
-</steps>`
+</steps>
+<link>../blog-new/33333, Next up...An Intro to Browser Dev Tools</link>
+`

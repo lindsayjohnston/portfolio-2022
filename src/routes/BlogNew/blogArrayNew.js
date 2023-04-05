@@ -30,23 +30,23 @@ export const blogArrayNew = [
    {
       _id: "33333",
       title: "An Intro to Browser Dev Tools",
-      snippet: "Wreak havoc on the front page of the New York Times with browser hacks.",
-      mainImage: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/vs-code-welcome.png",
-      imgAltText: "VS Code",
-      thumbnail: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/vs-code-welcome365x222.jpg",
+      snippet: "Wreak havoc on the front page of the New York Times with these browser hacks.",
+      mainImage: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/dev-tools-graphic800x533.jpg",
+      imgAltText: "mouth wrench",
+      thumbnail: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/IntroToDevTools/dev-tools-graphic300x200.jpg",
       highlight: false,
       content: blogString3,
-      date: "March 30, 2023"
+      date: "April 4, 2023"
    },
-   {
-      _id: "44444",
-      title: "HTML Exploration Project",
-      snippet: "Create a personalized HTML library to carry with you on your web dev journey.",
-      mainImage: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/vs-code-welcome.png",
-      imgAltText: "VS Code",
-      thumbnail: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/SetUpVSCode/vs-code-welcome365x222.jpg",
-      highlight: false,
-      content: blogString4,
-      date: "April 3, 2023"
-   }
+   // {
+   //    _id: "44444",
+   //    title: "HTML Exploration Project",
+   //    snippet: "Create a personalized HTML toolbox to carry with you on your web dev journey.",
+   //    mainImage: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/html-graphic-800x5981.jpg",
+   //    imgAltText: "HTML graphic",
+   //    thumbnail: "https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/html-graphic300x222.jpg",
+   //    highlight: false,
+   //    content: blogString4,
+   //    date: "April 10, 2023"
+   // }
 ]

@@ -20,12 +20,12 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
 {"stepTitle": "STEP 2: FILL THE FILE WITH BOILERPLATE HTML",
 "stepContent": "
          <p>
-         If you need help creating a basic HTML FILE, check out the article <link>../blog-new/11111, here</link>.
+         If you need help creating a basic HTML file, check out the article <link>../blog-new/11111, here</link>.
          </p>
          <p>
          When all is said and done, you should see something like this in your IDE:
          </p>
-         <img>html boilerplate, SRC</img>
+         <img>html boilerplate, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/index-html.png</img>
          <p>
          Have some fun with the <strong><title> </strong> tag and feel free to leave the 
          <strong><body> </strong> tag blank for now. We’ll be replacing it momentarily.
@@ -34,9 +34,11 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
          Open the Dev Tools to inspect your elements as you go. Check out <link>#,this article</link> if you
          are unsure about working with browser Dev Tools.</p>
          <p>Your browser set up should look something like this:</p>
-         <img>simple webpage, SRC</img>
+         <img>simple webpage, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/first-browser-image.png</img>
 "}
 </step>
+
+
 <step>
 {
    "stepTitle": "STEP 3: ADD IN HEADER ELEMENTS WITH DESCRIPTIONS",
@@ -50,7 +52,7 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
 ...
       </code>
       <p>Save the file and refresh your browser. You should see something like this:</p>
-      <img>h1 element image, SRC</img>
+      <img>h1 element image, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/2nd-browser-image.png</img>
       <p>
       Notice how the font size and weight changed just by specifying a new type of element. 
       As you continue in your HTML 
@@ -74,20 +76,44 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
 ...
             </code>
             <p>Check it out in the browser:</p>
-            <img>header elements, SRC</img>
+            <img>header elements, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/h-elements.png</img>
    <p>
    Check out the <a>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements, MDN web docs</a> on <strong><h1> </strong> through <strong><h6> </strong> 
    elements. 
    Add in any notes that you find interesting or memorable into your headings. 
    Make this your own! Here’s how mine looks:
    </p>
-   <img>header elements with notes, SRC</img>
+   <img>header elements with notes, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/h-elements-with-notes.png</img>
    "
 }
 </step>
 <step>
 {
-   "stepTitle": "STEP 4: ADD IN SOME VISUAL CONTENT",
+   "stepTitle": "STEP 4: ADD IN SOME TEXT CONTENT",
+   "stepContent":"
+   <p>
+   Most web pages will have a heading or multiple headings with various bits of written content. 
+   Use the <strong><p> </strong> element (the 'p' stands for 'paragraph') for this purpose.
+   </p>
+   <code>
+...(newline)
+<body>(newline)
+   <h1>This is an H1 Element: It's used for top-level headings</h1>(newline)
+   ...(newline)
+   <p>This is a p element: It's used for paragraphs like… I kicked a gangster (newline)
+   while riding a motorcycle because the voices told me to. (newline)
+   Then I rolled around my neighbourhood while listening to (newline)
+   Gangnam Style because someone offered me 1,000,000 dollars.(newline)
+   </p>(newline)
+</body>(newline)
+...
+            </code>
+   "
+}
+</step>
+<step>
+{
+   "stepTitle": "STEP 5: ADD IN SOME VISUAL CONTENT",
    "stepContent": "
       <p>
       Up to this point, everything has been extremely boring and you might be questioning your career as a web developer. 
@@ -96,7 +122,7 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
       <p>
       Google your favorite image, right click it and copy the link.
       </p>
-      <img>image search of Beyonce, SRC</img>
+      <img>image search of Beyonce, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/beyonce-search.png</img>
       <p>Go to your IDE and add in the <strong><img> </strong> element. 
       This one is different than the others, so pay attention! </p>
 <code>
@@ -116,7 +142,7 @@ closing <strong></img> </strong> tag
 like you might have come to expect from staring at header and paragraph elements. It also requires a “src” attribute in order to make anything show up. 
 Add in the URL that you copied from your image search. Save and check it out in the browser…
 </p>
-<img>webpage with Beyonce, SRC</img>
+<img>webpage with Beyonce, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/img-element.png</img>
 <p>
 If you did everything right, your image should be 
 shining as bright as Beyonce on your wasteland of a black and white webpage.
@@ -126,7 +152,7 @@ shining as bright as Beyonce on your wasteland of a black and white webpage.
 </step>
 <step>
 {
-   "stepTitle": "STEP 5: ADD AN ATTRIBUTE TO THE IMG ELEMENT",
+   "stepTitle": "STEP 6: ADD AN ATTRIBUTE TO THE IMG ELEMENT",
    "stepContent": "
       <p>Go to your <strong></img> </strong> element and add an 'alt' attribute 
       with a useful description like so:</p>
@@ -148,7 +174,7 @@ and also helps boost the SEO of your webpages. More on that at <a>https://develo
 </step>
 <step>
 {
-   "stepTitle": "STEP 6: ADD IN MORE HTML ELEMENTS AD-NAUSEUM",
+   "stepTitle": "STEP 7: ADD IN MORE HTML ELEMENTS AD-NAUSEUM",
    "stepContent": "
       <p>
       Go to the <a>https://developer.mozilla.org/en-US/docs/Web/HTML/Element, MDN Docs on HTML Elements</a> for a full list. 
@@ -171,10 +197,9 @@ and also helps boost the SEO of your webpages. More on that at <a>https://develo
 <p>
 Check out all your elements in the browser and play around with them in the Dev Tools as well:
 </p>
-<img>inspecting with Dev Tools, SRC</img>
+<img>inspecting with Dev Tools, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/inspect.gif</img>
    "
 }
 </step>
 </steps>
-
-<link>../blog-new/22222, Next up... Set up an IDE</link>`
+`
