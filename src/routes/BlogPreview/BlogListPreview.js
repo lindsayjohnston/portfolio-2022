@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom';
-import './BlogNew.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { blogArrayNew } from './blogArrayNew';
 
-
-const BlogNew = () => {
+const BlogListPreview = (props) => {
     //get blogs from server
     const baseURL = "https://mongodb-test-ziu4.onrender.com/posts"
     const [blogs, setBlogs] = useState(null)
@@ -15,18 +12,20 @@ const BlogNew = () => {
     useEffect(() => {
         axios.get(baseURL).then((response) => {
             setBlogs(response.data)
-        }).catch(()=>setBlogsError(true))
+        }).catch(() => setBlogsError(true))
     }, [])
 
     return (
         <div className="blog-page page-content">
-            <h2>Blog</h2>
+            <h2>Blog PREVIEW!!!</h2>
+            <div className="center">
+                <button onClick={(e) => { e.preventDefault(); props.setAuthenticatedUser(false) }}>Click to un-authenticate</button>
+            </div>
             {blogs && !blogsError &&
                 <>
                     {blogs.map((blogData, index) => {
-                        if(!blogData.approved){
-                            console.log("Post not tagged for approval.")
-                            return null
+                        if (!blogData.approved) {
+                            console.log("Post not tagged for approval: " + blogData.title)
                         }
                         let sectionClass = "section-odd"
                         if (index % 2 === 0) {
@@ -36,9 +35,10 @@ const BlogNew = () => {
                             sectionClass = "highlighted-blog"
                         }
                         return (
-                            <Link to={`/blog/${blogData.blogSlug}`} key={blogData._id}>
+                            <Link to={`/blog-preview/${blogData.blogSlug}`} key={blogData._id}>
                                 <section className={sectionClass}>
                                     <div className="text-area">
+                                        {!blogData.approved && <p className='error-text'>Post not Approved!</p>}
                                         <h3>{blogData.title}</h3>
                                         <p>{blogData.snippet}</p>
                                         <p><strong>{new Date(blogData.date).toDateString()}</strong></p>
@@ -62,4 +62,4 @@ const BlogNew = () => {
     )
 }
 
-export default BlogNew;
+export default BlogListPreview;

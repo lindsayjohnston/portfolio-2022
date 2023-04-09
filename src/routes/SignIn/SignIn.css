@@ -1,0 +1,13 @@
+.sign-in .form-input,
+.sign-in button{
+   margin-top: 10px;
+}
+
+.sign-in label{
+   display: inline-block;
+   width: 100px;
+}
+
+.sign-in input{
+   margin-left: 10px;
+}

@@ -1,21 +1,38 @@
 import './App.css';
-import { useLocation, Routes, Route, Link } from "react-router-dom";
+import { useLocation, Routes, Route, Link, Navigate } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 import SplashScreen from './SplashScreen/SpashScreen';
 import Work from './routes/Work/Work.js';
 import About from './routes/About/About.js';
 import Contact from './routes/Contact/Contact.js';
 import Blog from './routes/Blog/Blog.js';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Music from './routes/Work/Music/Music';
 import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
 import BlogPost from './routes/Blog/BlogPost/BlogPost';
 import BlogNew from './routes/BlogNew/BlogNew'
 import BlogPostNew from './routes/BlogNew/BlogPostNew/BlogPostNew';
+import SignIn from './routes/SignIn/SignIn';
+import ProtectedRoute from './routes/ProtectedRoute/ProtectedRoute';
+import BlogEditor from './routes/BlogEditor/BlogEditor';
+import BlogListPreview from './routes/BlogPreview/BlogListPreview';
+import BlogPostPreview from './routes/BlogPreview/BlogPostPreview/BlogPostPreview';
 
 function App() {
+  const [authenticatedUser, setAuthenticatedUser] = useState(false)
   const location = useLocation();
+
+  useEffect(() => {
+    if (authenticatedUser) {
+      setTimeout(() => {
+        alert("You will be logged out soon in 10 minutes. Save your work.")
+      }, 60000 * 50)
+      setTimeout(() => {
+        setAuthenticatedUser(false)
+      }, 60000 * 60)
+    }
+  }, [authenticatedUser])
 
   useEffect(() => {
     let locationString = `${location.pathname.slice(1)}-link`;
@@ -61,11 +78,28 @@ function App() {
           <Route path='/work/web-dev' element={<WebDev />} />
           <Route path='/work/creative' element={<Creative />} />
           <Route path='/about' element={<About />} />
-          <Route path='/blog' element={<Blog />} />
-          <Route path='/blog/:blogUUID' element={<BlogPost />} />
-          <Route path='/blog-new' element={<BlogNew />} />
-          <Route path='blog-new/:blogId' element = {<BlogPostNew />}/>
+          <Route path='/blog-old' element={<Blog />} />
+          <Route path='/blog-old/:blogUUID' element={<BlogPost />} />
+          <Route path='/blog' element={<BlogNew />} />
+          <Route path='blog/:blogSlug' element={<BlogPostNew />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/sign-in/*' element={<SignIn setAuthenticatedUser={setAuthenticatedUser} authenticatedUser={authenticatedUser} />} />
+          <Route path='/blog-editor' element={
+            <ProtectedRoute authRoute={'/sign-in'} authenticatedUser={authenticatedUser}>
+              <BlogEditor setAuthenticatedUser={setAuthenticatedUser} />
+            </ProtectedRoute>
+          } />
+          <Route path='/blog-preview' element={
+            <ProtectedRoute authRoute={'/sign-in'} authenticatedUser={authenticatedUser}>
+              <BlogListPreview setAuthenticatedUser={setAuthenticatedUser} />
+            </ProtectedRoute>
+          } />
+          <Route path='/blog-preview/:blogSlug' element={
+            <ProtectedRoute  authRoute={'/sign-in'} authenticatedUser={authenticatedUser}>
+              <BlogPostPreview setAuthenticatedUser={setAuthenticatedUser} />
+            </ProtectedRoute>
+          } />
+          <Route path="*" element={<div>Oops! Nothing to see here.</div>} />
         </Routes>
       </main>
     </div>
