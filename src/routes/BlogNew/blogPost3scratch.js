@@ -87,5 +87,6 @@ but we’re going to focus on Chrome’s for this article.
 
 "}
 </step>
+<link>../blog/html-exploration, Next up...HTML Exploration Project</link>
 </steps>
 `

@@ -11,7 +11,7 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
    {"stepTitle" : "STEP 1: CREATE AN HTML FILE IN VSCODE", "stepContent":
       "
       <p>
-      If you need help setting up Visual Studio Code, check out the article <link>../blog-new/22222, here</link>.
+      If you need help setting up Visual Studio Code, check out the article <link>../blog/set-up-ide, here</link>.
       </p>
       "
    }
@@ -20,7 +20,7 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
 {"stepTitle": "STEP 2: FILL THE FILE WITH BOILERPLATE HTML",
 "stepContent": "
          <p>
-         If you need help creating a basic HTML file, check out the article <link>../blog-new/11111, here</link>.
+         If you need help creating a basic HTML file, check out the article <link>../blog/create-your-first-webpage, here</link>.
          </p>
          <p>
          When all is said and done, you should see something like this in your IDE:
@@ -31,7 +31,7 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
          <strong><body> </strong> tag blank for now. We’ll be replacing it momentarily.
          </p>
          <p>Open up this file in a browser to make sure that it’s loading correctly. (Click on the file in a file explorer and it should open up in a browser.) 
-         Open the Dev Tools to inspect your elements as you go. Check out <link>#,this article</link> if you
+         Open the Dev Tools to inspect your elements as you go. Check out <link>../blog/intro-dev-tools,this article</link> if you
          are unsure about working with browser Dev Tools.</p>
          <p>Your browser set up should look something like this:</p>
          <img>simple webpage, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/first-browser-image.png</img>
@@ -108,6 +108,9 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
 </body>(newline)
 ...
             </code>
+   <p>
+   If you need some help creating content, check out <a>https://funnysentences.com/sentence-generator/, https://funnysentences.com/sentence-generator/</a>
+   </p>
    "
 }
 </step>
@@ -137,9 +140,9 @@ HMTL examples to build upon and reference throughout your web dev career.</intro
 ...
 </code>
 <p>
-The <strong><img> </strong> element is self-closing– notice that it doesn’t have a 
-closing <strong></img> </strong> tag
-like you might have come to expect from staring at header and paragraph elements. It also requires a “src” attribute in order to make anything show up. 
+The <strong><img> </strong> element is self-closing – notice that it doesn’t have a 
+closing <strong></img> </strong> tag like you might have come to expect 
+from staring at header and paragraph elements. It also requires a “src” attribute in order to make anything show up. 
 Add in the URL that you copied from your image search. Save and check it out in the browser…
 </p>
 <img>webpage with Beyonce, https://portfolio-2023.s3.us-east-2.amazonaws.com/BlogPostMedia/htmlExplorationProject/img-element.png</img>
@@ -154,7 +157,7 @@ shining as bright as Beyonce on your wasteland of a black and white webpage.
 {
    "stepTitle": "STEP 6: ADD AN ATTRIBUTE TO THE IMG ELEMENT",
    "stepContent": "
-      <p>Go to your <strong></img> </strong> element and add an 'alt' attribute 
+      <p>Go to your <strong><img> </strong> element and add an 'alt' attribute 
       with a useful description like so:</p>
 <code>
 ...(newline)

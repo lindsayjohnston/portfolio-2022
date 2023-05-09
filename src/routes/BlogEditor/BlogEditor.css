@@ -53,10 +53,116 @@
    padding: .5rem;
 }
 
+/* -----------PREVIEW SECTION BELOW ----------------*/
 
 .blog-editor .preview-JSX-container {
-   height: 100%;
    border: 1px solid var(--hl-color-2);
    border-radius: 1rem;
+   width: 100%;
    padding: 1rem;
+}
+
+.blog-editor .preview-JSX-container * {
+   margin-bottom: 1rem;
+}
+
+.blog-editor .preview-JSX-container .important-info *,
+.blog-editor .preview-JSX-container .img-container img{
+   margin-bottom: unset;
+}
+
+
+.blog-editor .preview-JSX-container h2,
+.blog-editor .preview-JSX-container h3 {
+   text-align: center;
+}
+
+.blog-editor .preview-JSX-container .blog-post-content {
+   border: 1px solid var(--hl-color-2);
+   border-radius: 1rem;
+   width: 100%;
+   padding: 1rem;
+}
+
+.blog-editor .preview-JSX-container .blog-image {
+   max-width: 100%;
+   max-height: 510px;
+   margin: 1rem 0;
+}
+
+.blog-editor .preview-JSX-container .prerequisites {
+   background-color: var(--hl-color-1);
+   border-radius: 1rem;
+   padding: 1rem;
+}
+
+.blog-editor .preview-JSX-container .important-info {
+   background-color: var(--second-dark-color);
+   color: var(--second-light-color);
+   padding: 1rem;
+   display: flex;
+}
+
+.blog-editor .preview-JSX-container .important-info .icon-container {
+   display: flex;
+   align-items: center;
+   padding-right: 1rem;
+}
+
+.blog-editor .preview-JSX-container .important-info .icon {
+   width: 20px;
+}
+
+.blog-editor .preview-JSX-container a{
+   margin-right: 3px;
+}
+
+.blog-editor .preview-JSX-container .prerequisites ul {
+   list-style-type: unset;
+   margin-left: 1rem;
+   margin-bottom: unset;
+}
+.blog-editor .preview-JSX-container .steps{
+   width:100%;
+}
+
+.blog-editor .preview-JSX-container .step {
+   margin-top: 1rem;
+   border-top: 1px solid var(--hl-color-2);
+}
+
+.blog-editor .preview-JSX-container .step h4 {
+   color: var(--second-dark-color);
+}
+
+.blog-editor .preview-JSX-container .step-body {
+   margin: 0 1rem 0 1rem;
+}
+
+.blog-editor .preview-JSX-container code {
+   width: 100%;
+   
+   display: block;
+   overflow: auto;
+   color: var(--hl-color-3);
+   background-color: var(--main-dark-color);
+   padding: 1rem;
+}
+
+.blog-editor .preview-JSX-container .img-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.blog-editor .preview-JSX-container .img-container img {
+   border: 1px solid var(--hl-color-2);
+   border-radius: 1rem;
+   max-width: 100%;
+   max-height: 450px;
+   padding: 1rem;
+}
+
+.blog-editor .preview-JSX-container .prerequisites li{
+   margin-bottom: unset;
 }

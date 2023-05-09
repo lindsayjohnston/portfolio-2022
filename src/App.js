@@ -5,12 +5,10 @@ import SplashScreen from './SplashScreen/SpashScreen';
 import Work from './routes/Work/Work.js';
 import About from './routes/About/About.js';
 import Contact from './routes/Contact/Contact.js';
-import Blog from './routes/Blog/Blog.js';
 import { useEffect, useState } from 'react';
 import Music from './routes/Work/Music/Music';
 import WebDev from './routes/Work/WebDev/WebDev';
 import Creative from './routes/Work/Creative/Creative';
-import BlogPost from './routes/Blog/BlogPost/BlogPost';
 import BlogNew from './routes/BlogNew/BlogNew'
 import BlogPostNew from './routes/BlogNew/BlogPostNew/BlogPostNew';
 import SignIn from './routes/SignIn/SignIn';
@@ -78,8 +76,6 @@ function App() {
           <Route path='/work/web-dev' element={<WebDev />} />
           <Route path='/work/creative' element={<Creative />} />
           <Route path='/about' element={<About />} />
-          <Route path='/blog-old' element={<Blog />} />
-          <Route path='/blog-old/:blogUUID' element={<BlogPost />} />
           <Route path='/blog' element={<BlogNew />} />
           <Route path='blog/:blogSlug' element={<BlogPostNew />} />
           <Route path='/contact' element={<Contact />} />
