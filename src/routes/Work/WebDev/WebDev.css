@@ -29,3 +29,8 @@
 .web-dev-page .content-area img{
     width: 100%;
 }
+
+.web-dev-page .link-eque-button{
+    margin: .5rem 0;
+    width: unset;
+}
