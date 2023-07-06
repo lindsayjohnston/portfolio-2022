@@ -62,6 +62,9 @@ function App() {
             <li className='blog-link nav-link'>
               <Link to="/blog">Blog</Link>
             </li>
+            <li className='bike-link nav-link'>
+              <Link to="/bike">Biking</Link>
+            </li>
             <li className='contact-link nav-link'>
               <Link to="/contact">Contact</Link>
             </li>

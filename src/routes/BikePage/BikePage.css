@@ -1,0 +1,51 @@
+
+.bike-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bike-page .section-even {
+    border: 1px solid var(--hl-color-2);
+    border-radius: 1rem;
+    width: 50%;
+    min-width: 240px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    }
+
+    .bike-page .section-odd {
+        background-color: var(--hl-color-1);
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        }
+
+.bike-page .bike-lindsay-img{
+    width: 100%;
+}
+
+.bike-page .links {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    min-width: 240px;
+}
+
+.bike-page .secondary-link-style{
+    width: 100%
+}
+
+.bike-page .div-row{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+}
+
+.bike-page .div-row .secondary-link-style{
+    width: fit-content;
+    background-color: var(--second-dark-color);
+}
