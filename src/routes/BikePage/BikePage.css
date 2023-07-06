@@ -4,6 +4,13 @@
     flex-direction: column;
     align-items: center;
 }
+
+.bike-page h2,
+.bike-page h3,
+.bike-page p{
+    text-align: center;
+}
+
 .bike-page .section-even {
     border: 1px solid var(--hl-color-2);
     border-radius: 1rem;
@@ -28,7 +35,7 @@
     padding: 1rem;
     margin-bottom: 1rem;
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     min-width: 240px;
