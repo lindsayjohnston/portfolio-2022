@@ -56,3 +56,7 @@
     width: fit-content;
     background-color: var(--second-dark-color);
 }
+
+.bike-page #playlists a{
+    background-color: var(--second-dark-color);
+}
