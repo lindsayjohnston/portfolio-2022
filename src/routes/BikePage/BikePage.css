@@ -60,3 +60,7 @@
 .bike-page #playlists a{
     background-color: var(--second-dark-color);
 }
+
+#july-10 video{
+    width: 100%;
+}
