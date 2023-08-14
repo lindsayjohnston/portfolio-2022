@@ -76,19 +76,19 @@ export default function BikePage() {
                         rel="noreferrer">Energy Playlist - The best kick in the butt to get me up a big climb</a>
                 </div>
             </div>
-            <div className="section-even" id="july-10">
+            <div className="section-even ig-video" id="july-10">
                 <h3>July 10, 2023 - Fort Collins, CO to Rawlins, WY - 296 Miles</h3>
                 <video controls autoplay>
                     <source src="https://portfolio-2023.s3.us-east-2.amazonaws.com/bikeTrip/july10.mp4" type="video/mp4" />
                 </video>
             </div>
-            <div className="section-odd" id="july-21">
+            <div className="section-odd ig-video" id="july-21">
                 <h3>July 21, 2023 - Rawlins, WY to Anaconda, MT - 675 Miles</h3>
                 <video controls autoplay>
                     <source src="https://portfolio-2023.s3.us-east-2.amazonaws.com/bikeTrip/july-21-2023.mp4" type="video/mp4" />
                 </video>
             </div>
-            <div className="section-even" id="july-27">
+            <div className="section-even ig-video" id="july-27">
                 <h3>July 27, 2023 - Anaconda, MT to Spokane, WA - 394 Miles</h3>
                 <video controls autoplay>
                     <source src="https://portfolio-2023.s3.us-east-2.amazonaws.com/bikeTrip/july-27-2023.mp4" type="video/mp4" />

@@ -61,6 +61,11 @@
     background-color: var(--second-dark-color);
 }
 
-#july-10 video{
+.bike-page .ig-video{
+    width: 50%;
+    min-width: 240px;
+}
+
+.bike-page .ig-video video{
     width: 100%;
 }
