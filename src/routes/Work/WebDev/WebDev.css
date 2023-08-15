@@ -34,3 +34,12 @@
     margin: .5rem 0;
     width: unset;
 }
+
+.web-dev-page .content-area iframe {
+    width: calc(100vw - 5rem);
+    height: calc((2/3) * (100vw - 5rem));
+    min-width: 240px;
+    min-height: calc((2/3) * 240px);
+    max-width: 700px;
+    max-height: calc((2/3)*700px);
+}

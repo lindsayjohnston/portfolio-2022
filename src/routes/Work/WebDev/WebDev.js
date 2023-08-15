@@ -19,15 +19,16 @@ const WebDev = () => {
                 </section>
                 <section className="section-odd flex-column">
                     <img alt="web scraper mockup"
-                        src="../media/work/blog-editor-mockup768x508.png"></img>
+                        src="../media/work/stock-scraper-mockup768x508.png"></img>
                     <button onClick={handleGatedContentButtonClick}
                         className="secondary-link-style link-eque-button">Stock Data Web Scraper</button>
                     <a target="_blank" rel="noreferrer" className="secondary-link-style"
-                        href="#">GitHub Repo</a>
+                        href="https://github.com/lindsayjohnston/scraper-mc-scrapey">GitHub Repo</a>
                     <p>
                         Unable to find the exact stock screens I wanted to
                         build an investment portfolio, I developed a JavaScript web-scraping app to do the job for me. I feed the app a list of stock tickers and it outputs the data I need into a CSV file.
                     </p>
+                    <iframe src="https://www.youtube.com/embed/zee7d_Daocw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </section>
                 <section className="section-even flex-column">
                     <img alt="Blog editor mockup"
@@ -35,7 +36,7 @@ const WebDev = () => {
                     <button onClick={handleGatedContentButtonClick}
                         className="secondary-link-style link-eque-button">MERN Stack Blog Editor</button>
                     <a target="_blank" rel="noreferrer" className="secondary-link-style"
-                        href="#">GitHub Repo</a>
+                        href="https://github.com/lindsayjohnston/portfolio-2022/blob/master/src/routes/BlogEditor/BlogEditor.js">GitHub Repo</a>
                     <p>
                         This full-stack blog-editing app allows me to write, preview, and submit blog posts for this website.
                         It features my own hand-rolled markdown language as well as a REST API built with Express.js and MongoDB.
