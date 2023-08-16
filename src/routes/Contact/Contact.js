@@ -7,7 +7,7 @@ const Contact = () => {
             <h2>Contact</h2>
             <div className='section-even'>
                 <a className="secondary-link-style"
-                    href="mailto: lindsaykjohnston@outlook.com">Email</a>
+                    href="mailto: hello@lindsaykjohnston.com">Email</a>
                 <a className="secondary-link-style"
                     href="https://www.linkedin.com/in/lindsay-k-johnston/"
                     target="_blank"
