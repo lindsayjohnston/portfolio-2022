@@ -1,0 +1,49 @@
+.bike-routes-page {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.bike-routes-page section {
+   padding: 1rem;
+   align-items: center;
+   margin-bottom: 1rem;
+   width: 100%;
+   display: flex;
+   transition: all .2s ease-in-out;
+ }
+
+.bike-routes-page .section-odd {
+   border: 1px solid var(--hl-color-2);
+   border-radius: 1rem;
+}
+
+.bike-routes-page .section-even {
+   background-color: var(--hl-color-1);
+   border-radius: 1rem;
+}
+
+.bike-routes-page a {
+   margin: 0;
+   width: 100%;
+   color: var(--main-dark-color);
+}
+
+.bike-routes-page .text-area {
+   flex: 1 1;
+ }
+
+ .bike-routes-page .section-odd img, 
+ .bike-routes-page .section-even img {
+   width: 250px;
+ }
+
+@media only screen and (max-width: 500px) {
+   .bike-routes-page section {
+      flex-direction: column;
+   }
+
+    .bike-routes-page p, .bike-routes-page h2, .bike-routes-page h3 {
+      text-align: center;
+    }
+}

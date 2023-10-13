@@ -1,4 +1,3 @@
-
 .bike-page {
     display: flex;
     flex-direction: column;
@@ -7,7 +6,7 @@
 
 .bike-page h2,
 .bike-page h3,
-.bike-page p{
+.bike-page p {
     text-align: center;
 }
 
@@ -18,17 +17,32 @@
     min-width: 240px;
     padding: 1rem;
     margin-bottom: 1rem;
-    }
+}
 
-    .bike-page .section-odd {
-        background-color: var(--hl-color-1);
-        border-radius: 1rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        }
+.bike-page .section-odd {
+    background-color: var(--hl-color-1);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
 
-.bike-page .bike-lindsay-img{
+.bike-page .bike-lindsay-img {
     width: 100%;
+}
+
+.bike-page .route-link{
+    margin: 20px 0px;
+}
+
+.bike-page .route-link a {
+    background-color: var(--hl-color-3);
+    color: var(--main-light-color);
+    padding: .5rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .bike-page .links {
@@ -41,31 +55,31 @@
     min-width: 240px;
 }
 
-.bike-page .secondary-link-style{
+.bike-page .secondary-link-style {
     width: 100%
 }
 
-.bike-page .div-row{
+.bike-page .div-row {
     display: flex;
     flex-direction: row;
-    width:100%;
+    width: 100%;
     justify-content: space-around;
 }
 
-.bike-page .div-row .secondary-link-style{
+.bike-page .div-row .secondary-link-style {
     width: fit-content;
     background-color: var(--second-dark-color);
 }
 
-.bike-page #playlists a{
+.bike-page #playlists a {
     background-color: var(--second-dark-color);
 }
 
-.bike-page .ig-video{
+.bike-page .ig-video {
     width: 50%;
     min-width: 240px;
 }
 
-.bike-page .ig-video video{
+.bike-page .ig-video video {
     width: 100%;
 }

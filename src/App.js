@@ -17,6 +17,7 @@ import BlogEditor from './routes/BlogEditor/BlogEditor';
 import BlogListPreview from './routes/BlogPreview/BlogListPreview';
 import BlogPostPreview from './routes/BlogPreview/BlogPostPreview/BlogPostPreview';
 import BikePage from './routes/BikePage/BikePage';
+import BikeRoutes from './routes/BikeRoutes/BikeRoutes';
 
 function App() {
   const [authenticatedUser, setAuthenticatedUser] = useState(false)
@@ -84,6 +85,7 @@ function App() {
           <Route path='blog/:blogSlug' element={<BlogPostNew />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/bike' element={<BikePage/>} />
+          <Route path='/bike/routes' element={<BikeRoutes/>} />
           <Route path='/sign-in/*' element={<SignIn setAuthenticatedUser={setAuthenticatedUser} authenticatedUser={authenticatedUser} />} />
           <Route path='/blog-editor' element={
             <ProtectedRoute authRoute={'/sign-in'} authenticatedUser={authenticatedUser}>
