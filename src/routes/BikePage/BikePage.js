@@ -6,9 +6,9 @@ export default function BikePage() {
 
     return (
         <div className="bike-page page-content">
-            <div className="route-link">
+            <button className="route-link">
                 <Link to="/bike/routes">Tucson Overnighter Bikepacking Routes</Link>
-            </div>
+            </button>
             <h2>I Biked From CO to WA - Summer 2023</h2>
             <div className='section-even'>
                 <img className="bike-lindsay-img" alt="lindsay on a bike" src="../media/bike/lindsay_bikepacking.jpg" />

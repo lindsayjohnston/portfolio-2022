@@ -32,17 +32,25 @@
 
 .bike-page .route-link{
     margin: 20px 0px;
-}
-
-.bike-page .route-link a {
     background-color: var(--hl-color-3);
     color: var(--main-light-color);
-    padding: .5rem;
+    padding: unset;
     border-radius: 1rem;
     text-align: center;
     transition: all .2s ease-in-out;
     font-weight: bold;
-    margin-bottom: 20px;
+}
+
+.bike-page .route-link:hover {
+    transform: scale(1.02);
+  }
+
+.bike-page .route-link a {
+    color: var(--main-light-color);
+    padding: .5rem;
+    display: inline-block;
+    width: 100%;
+    margin: unset;
 }
 
 .bike-page .links {
