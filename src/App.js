@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div className="app" id="app">
-      <SplashScreen />
+      {/* <SplashScreen /> */}
       <header className="app-header flex-row">
         <nav >
           <ul className='flex-row'>

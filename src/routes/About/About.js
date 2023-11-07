@@ -25,6 +25,10 @@ const About = () => {
                     target="_blank"
                     rel="noreferrer">Resume</a>
                 <Link className='secondary-link-style' to="/">My Work</Link>
+                <a className='secondary-link-style'
+                    href='https://github.com/lindsayjohnston'
+                    target="_blank"
+                    rel='noreferrer'>GitHub</a>
             </div>
 
         </div>
