@@ -7,7 +7,7 @@ const WebDev = () => {
     //make mockups for Chipotle, add section for chat server
     const handleGatedContentButtonClick = (e) => {
         e.preventDefault()
-        alert("This app requires credentials to access. Please contact lindsaykjohnston@outlook.com for a demo!")
+        alert("This app requires credentials to access. Please contact hello@lindsaykjohnston.com for a demo!")
     }
 
     return (

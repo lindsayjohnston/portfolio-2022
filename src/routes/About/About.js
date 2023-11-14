@@ -21,7 +21,7 @@ const About = () => {
             </div>
             <div className='links section-even'>
                 <a className='secondary-link-style'
-                    href="https://portfolio-2023.s3.us-east-2.amazonaws.com/Lindsay_Johnston_WD_Resume_Aug2023.pdf"
+                    href="https://portfolio-2023.s3.us-east-2.amazonaws.com/Lindsay_Johnston_WD_Resume_Nov2023.pdf"
                     target="_blank"
                     rel="noreferrer">Resume</a>
                 <Link className='secondary-link-style' to="/">My Work</Link>
