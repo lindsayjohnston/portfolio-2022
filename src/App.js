@@ -21,7 +21,7 @@ import BikeRoutes from './routes/BikeRoutes/BikeRoutes';
 
 function App() {
   const [authenticatedUser, setAuthenticatedUser] = useState(false)
-  const location = useLocation();
+ const location = useLocation();
 
   useEffect(() => {
     if (authenticatedUser) {
@@ -70,7 +70,7 @@ function App() {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
-          <h1 className='top-title'>lindsay k. johnston</h1>
+          <h1 className='top-title' data-testid="heading">lindsay k. johnston</h1>
         </nav>
       </header>
       <main id="main">
