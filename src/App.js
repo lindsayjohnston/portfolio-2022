@@ -18,6 +18,7 @@ import BlogListPreview from './routes/BlogPreview/BlogListPreview';
 import BlogPostPreview from './routes/BlogPreview/BlogPostPreview/BlogPostPreview';
 import BikePage from './routes/BikePage/BikePage';
 import BikeRoutes from './routes/BikeRoutes/BikeRoutes';
+import UnderConstruction from './routes/UnderConstruction/UnderConstruction.js';
 
 function App() {
   const [authenticatedUser, setAuthenticatedUser] = useState(false)
@@ -78,7 +79,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Work />} />
           <Route path='/work/music' element={<Music />} />
-          <Route path='/work/web-dev' element={<WebDev />} />
+          <Route path='/work/web-dev' element={<UnderConstruction />} />
           <Route path='/work/creative' element={<Creative />} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<BlogNew />} />

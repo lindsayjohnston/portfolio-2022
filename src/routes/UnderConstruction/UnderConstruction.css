@@ -1,0 +1,6 @@
+.under-page{ text-align:center; max-width:900px; margin:0 auto; }
+.uc-hero{ display:flex; flex-direction:column; align-items:center; gap:1rem; padding:1rem; }
+.uc-icon{ font-size:6rem; animation:bounce 2s infinite; }
+@keyframes bounce{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-10px);} }
+.links{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1rem; }
+@media (max-width:600px){ .uc-icon{ font-size:4rem; } .under-page{ padding:1rem; } }
