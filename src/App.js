@@ -61,9 +61,9 @@ function App() {
             <li className='about-link nav-link'>
               <Link to="/about">About</Link>
             </li>
-            <li className='blog-link nav-link'>
+            {/* <li className='blog-link nav-link'>
               <Link to="/blog">Blog</Link>
-            </li>
+            </li> */}
             <li className='bike-link nav-link'>
               <Link to="/bike">Biking</Link>
             </li>
